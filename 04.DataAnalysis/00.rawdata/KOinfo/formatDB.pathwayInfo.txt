@@ -1,0 +1,363 @@
+ko01100	Metabolic pathways	2073
+ko01120	Microbial metabolism in diverse environments	691
+ko01110	Biosynthesis of secondary metabolites	681
+ko02020	Two-component system	411
+ko02010	ABC transporters	390
+ko01240	Biosynthesis of cofactors	261
+ko01200	Carbon metabolism	246
+ko02024	Quorum sensing	191
+ko01230	Biosynthesis of amino acids	188
+ko00680	Methane metabolism	133
+ko00520	Amino sugar and nucleotide sugar metabolism	121
+ko00230	Purine metabolism	118
+ko01250	Biosynthesis of nucleotide sugars	116
+ko00620	Pyruvate metabolism	93
+ko00051	Fructose and mannose metabolism	88
+ko00190	Oxidative phosphorylation	87
+ko03010	Ribosome	86
+ko02025	Biofilm formation - Pseudomonas aeruginosa	86
+ko01232	Nucleotide metabolism	84
+ko00010	Glycolysis / Gluconeogenesis	78
+ko00500	Starch and sucrose metabolism	77
+ko00650	Butanoate metabolism	76
+ko00240	Pyrimidine metabolism	75
+ko00720	Carbon fixation pathways in prokaryotes	75
+ko00860	Porphyrin metabolism	74
+ko05111	Biofilm formation - Vibrio cholerae	73
+ko03070	Bacterial secretion system	72
+ko00270	Cysteine and methionine metabolism	72
+ko00640	Propanoate metabolism	72
+ko00630	Glyoxylate and dicarboxylate metabolism	71
+ko01501	beta-Lactam resistance	70
+ko02060	Phosphotransferase system (PTS)	69
+ko00920	Sulfur metabolism	68
+ko00260	Glycine, serine and threonine metabolism	67
+ko01220	Degradation of aromatic compounds	66
+ko00030	Pentose phosphate pathway	64
+ko00330	Arginine and proline metabolism	62
+ko00362	Benzoate degradation	57
+ko00541	O-Antigen nucleotide sugar biosynthesis	57
+ko00540	Lipopolysaccharide biosynthesis	55
+ko00760	Nicotinate and nicotinamide metabolism	54
+ko00052	Galactose metabolism	52
+ko00040	Pentose and glucuronate interconversions	52
+ko02026	Biofilm formation - Escherichia coli	50
+ko00790	Folate biosynthesis	50
+ko02040	Flagellar assembly	50
+ko01503	Cationic antimicrobial peptide (CAMP) resistance	48
+ko00550	Peptidoglycan biosynthesis	47
+ko00400	Phenylalanine, tyrosine and tryptophan biosynthesis	45
+ko00360	Phenylalanine metabolism	45
+ko00020	Citrate cycle (TCA cycle)	45
+ko00564	Glycerophospholipid metabolism	45
+ko00250	Alanine, aspartate and glutamate metabolism	45
+ko00280	Valine, leucine and isoleucine degradation	44
+ko01210	2-Oxocarboxylic acid metabolism	43
+ko00910	Nitrogen metabolism	41
+ko00220	Arginine biosynthesis	38
+ko00300	Lysine biosynthesis	37
+ko00970	Aminoacyl-tRNA biosynthesis	36
+ko00627	Aminobenzoate degradation	36
+ko00770	Pantothenate and CoA biosynthesis	35
+ko00350	Tyrosine metabolism	35
+ko00130	Ubiquinone and other terpenoid-quinone biosynthesis	33
+ko00543	Exopolysaccharide biosynthesis	33
+ko01212	Fatty acid metabolism	33
+ko00740	Riboflavin metabolism	32
+ko00561	Glycerolipid metabolism	32
+ko03030	DNA replication	31
+ko00900	Terpenoid backbone biosynthesis	31
+ko00470	D-Amino acid metabolism	30
+ko05171	Coronavirus disease - COVID-19	30
+ko00053	Ascorbate and aldarate metabolism	30
+ko03440	Homologous recombination	29
+ko00310	Lysine degradation	29
+ko00340	Histidine metabolism	29
+ko00710	Carbon fixation in photosynthetic organisms	27
+ko02030	Bacterial chemotaxis	26
+ko00380	Tryptophan metabolism	26
+ko00410	beta-Alanine metabolism	26
+ko01054	Nonribosomal peptide structures	26
+ko03430	Mismatch repair	26
+ko00730	Thiamine metabolism	26
+ko00071	Fatty acid degradation	25
+ko00061	Fatty acid biosynthesis	23
+ko00670	One carbon pool by folate	23
+ko03060	Protein export	23
+ko00450	Selenocompound metabolism	23
+ko04112	Cell cycle - Caulobacter	23
+ko03018	RNA degradation	23
+ko01053	Biosynthesis of siderophore group nonribosomal peptides	22
+ko00480	Glutathione metabolism	21
+ko04122	Sulfur relay system	21
+ko03410	Base excision repair	21
+ko00660	C5-Branched dibasic acid metabolism	20
+ko03020	RNA polymerase	20
+ko00552	Teichoic acid biosynthesis	19
+ko00440	Phosphonate and phosphinate metabolism	19
+ko01052	Type I polyketide structures	19
+ko00562	Inositol phosphate metabolism	19
+ko01502	Vancomycin resistance	19
+ko00983	Drug metabolism - other enzymes	19
+ko00780	Biotin metabolism	18
+ko00643	Styrene degradation	18
+ko00195	Photosynthesis	18
+ko00430	Taurine and hypotaurine metabolism	17
+ko03008	Ribosome biogenesis in eukaryotes	17
+ko00633	Nitrotoluene degradation	17
+ko04142	Lysosome	16
+ko00290	Valine, leucine and isoleucine biosynthesis	16
+ko00622	Xylene degradation	16
+ko00625	Chloroalkane and chloroalkene degradation	16
+ko00405	Phenazine biosynthesis	15
+ko05150	Staphylococcus aureus infection	15
+ko00511	Other glycan degradation	15
+ko00998	Biosynthesis of various antibiotics	14
+ko00460	Cyanoamino acid metabolism	14
+ko00523	Polyketide sugar unit biosynthesis	14
+ko05131	Shigellosis	14
+ko05132	Salmonella infection	14
+ko00261	Monobactam biosynthesis	13
+ko04146	Peroxisome	13
+ko05133	Pertussis	13
+ko00281	Geraniol degradation	13
+ko05012	Parkinson disease	13
+ko05022	Pathways of neurodegeneration - multiple diseases	13
+ko00960	Tropane, piperidine and pyridine alkaloid biosynthesis	13
+ko00600	Sphingolipid metabolism	13
+ko03420	Nucleotide excision repair	12
+ko05130	Pathogenic Escherichia coli infection	12
+ko00626	Naphthalene degradation	11
+ko05100	Bacterial invasion of epithelial cells	11
+ko00930	Caprolactam degradation	11
+ko00750	Vitamin B6 metabolism	11
+ko05415	Diabetic cardiomyopathy	11
+ko04066	HIF-1 signaling pathway	11
+ko04922	Glucagon signaling pathway	11
+ko00906	Carotenoid biosynthesis	11
+ko05208	Chemical carcinogenesis - reactive oxygen species	11
+ko00521	Streptomycin biosynthesis	11
+ko00623	Toluene degradation	11
+ko00361	Chlorocyclohexane and chlorobenzene degradation	10
+ko05110	Vibrio cholerae infection	10
+ko00571	Lipoarabinomannan (LAM) biosynthesis	10
+ko05230	Central carbon metabolism in cancer	10
+ko00572	Arabinogalactan biosynthesis - Mycobacterium	10
+ko00524	Neomycin, kanamycin and gentamicin biosynthesis	10
+ko00121	Secondary bile acid biosynthesis	10
+ko00531	Glycosaminoglycan degradation	9
+ko05016	Huntington disease	9
+ko00542	O-Antigen repeat unit biosynthesis	9
+ko00364	Fluorobenzoate degradation	9
+ko05014	Amyotrophic lateral sclerosis	9
+ko00525	Acarbose and validamycin biosynthesis	9
+ko03320	PPAR signaling pathway	9
+ko05134	Legionellosis	9
+ko00791	Atrazine degradation	9
+ko04141	Protein processing in endoplasmic reticulum	9
+ko00401	Novobiocin biosynthesis	8
+ko00624	Polycyclic aromatic hydrocarbon degradation	8
+ko04152	AMPK signaling pathway	8
+ko05200	Pathways in cancer	8
+ko05120	Epithelial cell signaling in Helicobacter pylori infection	8
+ko04212	Longevity regulating pathway - worm	8
+ko05010	Alzheimer disease	8
+ko04626	Plant-pathogen interaction	8
+ko04910	Insulin signaling pathway	7
+ko00984	Steroid degradation	7
+ko04714	Thermogenesis	7
+ko00621	Dioxin degradation	7
+ko05020	Prion disease	7
+ko00980	Metabolism of xenobiotics by cytochrome P450	6
+ko01040	Biosynthesis of unsaturated fatty acids	6
+ko00950	Isoquinoline alkaloid biosynthesis	6
+ko00999	Biosynthesis of various plant secondary metabolites	6
+ko01055	Biosynthesis of vancomycin group antibiotics	6
+ko04217	Necroptosis	6
+ko00565	Ether lipid metabolism	5
+ko03022	Basal transcription factors	5
+ko05152	Tuberculosis	5
+ko00785	Lipoic acid metabolism	5
+ko04936	Alcoholic liver disease	5
+ko04931	Insulin resistance	5
+ko05418	Fluid shear stress and atherosclerosis	5
+ko00982	Drug metabolism - cytochrome P450	5
+ko05017	Spinocerebellar ataxia	5
+ko04260	Cardiac muscle contraction	5
+ko04213	Longevity regulating pathway - multiple species	5
+ko00903	Limonene and pinene degradation	5
+ko05417	Lipid and atherosclerosis	5
+ko00311	Penicillin and cephalosporin biosynthesis	5
+ko04932	Non-alcoholic fatty liver disease	5
+ko00510	N-Glycan biosynthesis	5
+ko00513	Various types of N-glycan biosynthesis	5
+ko01059	Biosynthesis of enediyne antibiotics	5
+ko00997	Biosynthesis of various other secondary metabolites	5
+ko05164	Influenza A	4
+ko00365	Furfural degradation	4
+ko05203	Viral carcinogenesis	4
+ko04151	PI3K-Akt signaling pathway	4
+ko04120	Ubiquitin mediated proteolysis	4
+ko04068	FoxO signaling pathway	4
+ko04210	Apoptosis	4
+ko04621	NOD-like receptor signaling pathway	4
+ko00333	Prodigiosin biosynthesis	4
+ko04919	Thyroid hormone signaling pathway	4
+ko04614	Renin-angiotensin system	4
+ko03050	Proteasome	4
+ko04727	GABAergic synapse	4
+ko01523	Antifolate resistance	4
+ko04964	Proximal tubule bicarbonate reclamation	4
+ko04144	Endocytosis	4
+ko00253	Tetracycline biosynthesis	4
+ko05206	MicroRNAs in cancer	4
+ko00592	alpha-Linolenic acid metabolism	4
+ko05167	Kaposi sarcoma-associated herpesvirus infection	4
+ko04978	Mineral absorption	4
+ko00830	Retinol metabolism	4
+ko05231	Choline metabolism in cancer	4
+ko05143	African trypanosomiasis	3
+ko05165	Human papillomavirus infection	3
+ko00940	Phenylpropanoid biosynthesis	3
+ko00946	Degradation of flavonoids	3
+ko05207	Chemical carcinogenesis - receptor activation	3
+ko01051	Biosynthesis of ansamycins	3
+ko05160	Hepatitis C	3
+ko00140	Steroid hormone biosynthesis	3
+ko04961	Endocrine and other factor-regulated calcium reabsorption	3
+ko01057	Biosynthesis of type II polyketide products	3
+ko01524	Platinum drug resistance	3
+ko04214	Apoptosis - fly	3
+ko04928	Parathyroid hormone synthesis, secretion and action	3
+ko04137	Mitophagy - animal	3
+ko04972	Pancreatic secretion	3
+ko00590	Arachidonic acid metabolism	3
+ko04138	Autophagy - yeast	3
+ko04070	Phosphatidylinositol signaling system	3
+ko04724	Glutamatergic synapse	3
+ko04024	cAMP signaling pathway	3
+ko04973	Carbohydrate digestion and absorption	3
+ko05146	Amoebiasis	3
+ko00642	Ethylbenzene degradation	3
+ko04974	Protein digestion and absorption	3
+ko04976	Bile secretion	3
+ko04918	Thyroid hormone synthesis	3
+ko04016	MAPK signaling pathway - plant	3
+ko05204	Chemical carcinogenesis - DNA adducts	3
+ko03450	Non-homologous end-joining	3
+ko00603	Glycosphingolipid biosynthesis - globo and isoglobo series	3
+ko03250	Viral life cycle - HIV-1	2
+ko04330	Notch signaling pathway	2
+ko01056	Biosynthesis of type II polyketide backbone	2
+ko00909	Sesquiterpenoid and triterpenoid biosynthesis	2
+ko05340	Primary immunodeficiency	2
+ko00120	Primary bile acid biosynthesis	2
+ko00966	Glucosinolate biosynthesis	2
+ko04970	Salivary secretion	2
+ko05225	Hepatocellular carcinoma	2
+ko05142	Chagas disease	2
+ko03460	Fanconi anemia pathway	2
+ko04145	Phagosome	2
+ko00522	Biosynthesis of 12-, 14- and 16-membered macrolides	2
+ko05168	Herpes simplex virus 1 infection	2
+ko04930	Type II diabetes mellitus	2
+ko03013	Nucleocytoplasmic transport	2
+ko05166	Human T-cell leukemia virus 1 infection	2
+ko04361	Axon regeneration	2
+ko04211	Longevity regulating pathway	2
+ko00591	Linoleic acid metabolism	2
+ko04920	Adipocytokine signaling pathway	2
+ko04962	Vasopressin-regulated water reabsorption	2
+ko04072	Phospholipase D signaling pathway	2
+ko05162	Measles	2
+ko04216	Ferroptosis	2
+ko04071	Sphingolipid signaling pathway	2
+ko05161	Hepatitis B	2
+ko05205	Proteoglycans in cancer	2
+ko00332	Carbapenem biosynthesis	2
+ko04940	Type I diabetes mellitus	2
+ko00232	Caffeine metabolism	2
+ko03015	mRNA surveillance pathway	2
+ko04113	Meiosis - yeast	2
+ko03240	Viral replication	1
+ko05163	Human cytomegalovirus infection	1
+ko04110	Cell cycle	1
+ko00563	Glycosylphosphatidylinositol (GPI)-anchor biosynthesis	1
+ko00944	Flavone and flavonol biosynthesis	1
+ko05140	Leishmaniasis	1
+ko04310	Wnt signaling pathway	1
+ko04261	Adrenergic signaling in cardiomyocytes	1
+ko05212	Pancreatic cancer	1
+ko05030	Cocaine addiction	1
+ko04659	Th17 cell differentiation	1
+ko05222	Small cell lung cancer	1
+ko01521	EGFR tyrosine kinase inhibitor resistance	1
+ko04320	Dorso-ventral axis formation	1
+ko04912	GnRH signaling pathway	1
+ko03266	Virion - Herpesvirus	1
+ko04371	Apelin signaling pathway	1
+ko04658	Th1 and Th2 cell differentiation	1
+ko04925	Aldosterone synthesis and secretion	1
+ko04666	Fc gamma R-mediated phagocytosis	1
+ko04911	Insulin secretion	1
+ko04622	RIG-I-like receptor signaling pathway	1
+ko00604	Glycosphingolipid biosynthesis - ganglio series	1
+ko00981	Insect hormone biosynthesis	1
+ko04728	Dopaminergic synapse	1
+ko04924	Renin secretion	1
+ko05145	Toxoplasmosis	1
+ko05224	Breast cancer	1
+ko05416	Viral myocarditis	1
+ko04011	MAPK signaling pathway - yeast	1
+ko04960	Aldosterone-regulated sodium reabsorption	1
+ko05322	Systemic lupus erythematosus	1
+ko04380	Osteoclast differentiation	1
+ko00908	Zeatin biosynthesis	1
+ko00996	Biosynthesis of various alkaloids	1
+ko05323	Rheumatoid arthritis	1
+ko05211	Renal cell carcinoma	1
+ko04013	MAPK signaling pathway - fly	1
+ko04917	Prolactin signaling pathway	1
+ko00532	Glycosaminoglycan biosynthesis - chondroitin sulfate / dermatan sulfate	1
+ko05220	Chronic myeloid leukemia	1
+ko00941	Flavonoid biosynthesis	1
+ko04150	mTOR signaling pathway	1
+ko04915	Estrogen signaling pathway	1
+ko05135	Yersinia infection	1
+ko04080	Neuroactive ligand-receptor interaction	1
+ko05410	Hypertrophic cardiomyopathy	1
+ko04914	Progesterone-mediated oocyte maturation	1
+ko05219	Bladder cancer	1
+ko04530	Tight junction	1
+ko04022	cGMP-PKG signaling pathway	1
+ko00945	Stilbenoid, diarylheptanoid and gingerol biosynthesis	1
+ko00100	Steroid biosynthesis	1
+ko04726	Serotonergic synapse	1
+ko05031	Amphetamine addiction	1
+ko04934	Cushing syndrome	1
+ko03040	Spliceosome	1
+ko05170	Human immunodeficiency virus 1 infection	1
+ko01522	Endocrine resistance	1
+ko00943	Isoflavonoid biosynthesis	1
+ko04975	Fat digestion and absorption	1
+ko04721	Synaptic vesicle cycle	1
+ko04215	Apoptosis - multiple species	1
+ko00965	Betalain biosynthesis	1
+ko05034	Alcoholism	1
+ko05169	Epstein-Barr virus infection	1
+ko04612	Antigen processing and presentation	1
+ko04115	p53 signaling pathway	1
+ko04979	Cholesterol metabolism	1
+ko05215	Prostate cancer	1
+ko04971	Gastric acid secretion	1
+ko04140	Autophagy - animal	1
+ko04657	IL-17 signaling pathway	1
+ko04921	Oxytocin signaling pathway	1
+ko04014	Ras signaling pathway	1
+ko00331	Clavulanic acid biosynthesis	1
+ko04725	Cholinergic synapse	1
+ko00363	Bisphenol degradation	1
+ko00404	Staurosporine biosynthesis	1
+ko05210	Colorectal cancer	1
+ko04020	Calcium signaling pathway	1
+ko00515	Mannose type O-glycan biosynthesis	1

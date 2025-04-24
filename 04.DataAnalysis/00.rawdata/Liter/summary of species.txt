@@ -1,0 +1,239 @@
+Species	Phylum	Family	Genus	Species	Level Last	Isolation	Oxygen	Spore	Motile	Gram
+Acetanaerobacterium elongatum	Bacillota	Oscillospiraceae	Acetanaerobacterium	Acetanaerobacterium elongatum	Secondary degrader	Environment	mesophilic anaerobic 	non-spore-forming	non-motile	Gram-positive
+Adlercreutzia equolifaciens	Actinomycetota	Eggerthellaceae	Adlercreutzia	Adlercreutzia equolifaciens	Equol-producing bacterium	Intestine	obligately anaerobic	non-spore-forming	non-motile	Gram-positive
+Alistipes finegoldii	Bacteroidota	Rikenellaceae	Alistipes	Alistipes finegoldii	Secondary degrader	Clinical	strictly anaerobic	non-spore-forming	non-motile	Gram-negative
+Alistipes onderdonkii	Bacteroidota	Rikenellaceae	Alistipes	Alistipes onderdonkii	Secondary degrader	Intestine	strictly anaerobic	non-spore-forming	non-motile	Gram-negative
+Alistipes putredinis	Bacteroidota	Rikenellaceae	Alistipes	Alistipes putredinis	Asaccharolytic bacterium	Intestine	strictly anaerobic	non-spore-forming	non-motile	Gram-negative
+Alistipes shahii	Bacteroidota	Rikenellaceae	Alistipes	Alistipes shahii	Secondary degrader	Intestine	strictly anaerobic	non-spore-forming	non-motile	Gram-negative
+Alistipes timonensis	Bacteroidota	Rikenellaceae	Alistipes	Alistipes timonensis	Asaccharolytic bacterium	Intestine	anaerobic	non-spore-forming	non-motile	Gram-negative
+Alkaliphilus halophilus	Bacillota	Clostridiaceae	Alkaliphilus	Alkaliphilus halophilus	Secondary degrader	Environment	Strictly anaerobic	non-spore-forming	motile	Gram-positive
+Alloprevotella rava	Bacteroidota	Prevotellaceae	Alloprevotella	Alloprevotella rava	Secondary degrader	Oral	obligately anaerobic		non-motile	Gram-negative
+Anaerobacterium chartisolvens	Bacillota	Oscillospiraceae	Anaerobacterium	Anaerobacterium chartisolvens	Primary degrader	Environment	strictly anaerobic	non-spore-forming	motile	Gram-positive
+Anaerofilum agile	Bacillota	Oscillospiraceae	Anaerofilum	Anaerofilum agile	Secondary degrader	Environment	Strictly anaerobic	spore-forming	motile	Gram-positive
+Anaerofilum pentosovorans	Bacillota	Oscillospiraceae	Anaerofilum	Anaerofilum pentosovorans	Secondary degrader	Environment	Strictly anaerobic	spore-forming	non-motile	Gram-positive
+Anaerofustis stercorihominis	Bacillota	Eubacteriaceae	Anaerofustis	Anaerofustis stercorihominis	Secondary degrader	Intestine	strictly anaerobic	non-spore-forming	-	Gram-positive
+Anaerostipes butyraticus	Bacillota	Lachnospiraceae	Anaerostipes	Anaerostipes butyraticus	Butyrate producers	Intestine	anaerobic	spore-forming	non-motile	Gram-positive
+Anaerovorax odorimutans	Bacillota	Eubacteriales Family XIII. Incertae Sedis	Anaerovorax	Anaerovorax odorimutans	Putrescine-fermenting bacterium	Environment	strictly anaerobic	non-spore-forming	motile	Gram-positive
+Asaccharobacter celatus	Actinomycetota	Eggerthellaceae	Adlercreutzia	Adlercreutzia equolifaciens	Equol-producing bacterium	Intestine	obligately anaerobic	non-spore-forming	-	Gram-positive
+Bacteroides barnesiae	Bacteroidota	Bacteroidaceae	Phocaeicola	Phocaeicola barnesiae	Secondary degrader	Intestine	strictly anaerobic	non-spore-forming	non-motile	Gram-negative
+Bacteroides caccae	Bacteroidota	Bacteroidaceae	Bacteroides	Bacteroides caccae	Primary degrader	Intestine	anaerobic	-	non-motile	Gram-negative
+Bacteroides cellulosilyticus	Bacteroidota	Bacteroidaceae	Bacteroides	Bacteroides cellulosilyticus	Primary degrader	Intestine	strictly anaerobic	non-spore-forming	non-motile	Gram-negative
+Bacteroides coprocola	Bacteroidota	Bacteroidaceae	Phocaeicola	Phocaeicola coprocola	Secondary degrader	Intestine	strictly anaerobic	non-spore-forming	non-motile	Gram-negative
+Bacteroides coprophilus	Bacteroidota	Bacteroidaceae	Phocaeicola	Phocaeicola coprophilus	Secondary degrader	Intestine	anaerobic	non-spore-forming		Gram-negative
+Bacteroides galacturonicus	Bacteroidota	Bacteroidaceae	Bacteroides	Bacteroides galacturonicus	Primary degrader	Intestine	obligately anaerobic	non-spore-forming	motile	Gram-negative
+Bacteroides graminisolvens	Bacteroidota	Bacteroidaceae	Bacteroides	Bacteroides graminisolvens	Primary degrader	Environment	strictly anaerobic	non-spore-forming	non-motile	Gram-negative
+Bacteroides helcogenes	Bacteroidota	Bacteroidaceae	Bacteroides	Bacteroides helcogenes	Primary degrader	Other Site	obligately anerobic	non-spore-forming	non-motile	Gram-negative
+Bacteroides nordii	Bacteroidota	Bacteroidaceae	Bacteroides	Bacteroides nordii	Secondary degrader	Clinical	obligately anaerobic	-	-	Gram-negative
+Bacteroides ovatus	Bacteroidota	Bacteroidaceae	Bacteroides	Bacteroides ovatus	Primary degrader	Intestine	anaerobic	non-spore-forming	non-motile	Gram-negative
+Bacteroides paurosaccharolyticus	Bacteroidota	Bacteroidaceae	Phocaeicola	Phocaeicola paurosaccharolyticus	Primary degrader	Environment	strictly anaerobic	non-spore-forming	non-motile	Gram-negative
+Bacteroides pectinophilus	Bacillota	Unclassified	Unclassified	[Bacteroides] pectinophilus	Primary degrader	Intestine	obligately anaerobic	non-spore-forming	non-motile	Gram-negative
+Bacteroides plebeius	Bacteroidota	Bacteroidaceae	Phocaeicola	Phocaeicola plebeius	Secondary degrader	Intestine	strictly anaerobic	non-spore-forming	non-motile	Gram-negative
+Bacteroides reticulotermitis	Bacteroidota	Bacteroidaceae	Bacteroides	Bacteroides reticulotermitis	Primary degrader	Intestine	obligately anaerobic	non-spore-forming	non-motile	Gram-negative
+Bifidobacterium actinocoloniiforme	Actinomycetota	Bifidobacteriaceae	Bifidobacterium	Bifidobacterium actinocoloniiforme	Bifidobacterium	Intestine	anaerobic	non-spore-forming	non-motile	Gram-positive
+Bifidobacterium aesculapii	Actinomycetota	Bifidobacteriaceae	Bifidobacterium	Bifidobacterium aesculapii	Bifidobacterium	Intestine	anaerobic	non-spore-forming	non-motile	Gram-positive
+Bifidobacterium angulatum	Actinomycetota	Bifidobacteriaceae	Bifidobacterium	Bifidobacterium angulatum	Bifidobacterium	Intestine	anaerobic	non-spore-forming	non-motile	Gram-positive
+Bifidobacterium biavatii	Actinomycetota	Bifidobacteriaceae	Bifidobacterium	Bifidobacterium biavatii	Bifidobacterium	Intestine	facultatively anaerobic	-	non-motile	Gram-positive
+Bifidobacterium bifidum	Actinomycetota	Bifidobacteriaceae	Bifidobacterium	Bifidobacterium bifidum	Bifidobacterium	Intestine	anaerobic	non-spore-forming	non-motile	Gram-positive
+Bifidobacterium breve	Actinomycetota	Bifidobacteriaceae	Bifidobacterium	Bifidobacterium breve	Bifidobacterium	Intestine	anaerobic	non-spore-forming	non-motile	Gram-positive
+Bifidobacterium callitrichos	Actinomycetota	Bifidobacteriaceae	Bifidobacterium	Bifidobacterium callitrichos	Bifidobacterium	Intestine	facultatively anaerobic	-	non-motile	Gram-positive
+Bifidobacterium catenulatum	Actinomycetota	Bifidobacteriaceae	Bifidobacterium	Bifidobacterium catenulatum	Bifidobacterium		anaerobic	non-spore-forming	non-motile	Gram-positive
+Bifidobacterium choerinum	Actinomycetota	Bifidobacteriaceae	Bifidobacterium	Bifidobacterium choerinum	Bifidobacterium	Intestine	anaerobic	non-spore-forming	non-motile	Gram-positive
+Bifidobacterium crudilactis	Actinomycetota	Bifidobacteriaceae	Bifidobacterium	Bifidobacterium crudilactis	Bifidobacterium	Environment	aerobic	non-spore-forming	non-motile	Gram-positive
+Bifidobacterium gallinarum	Actinomycetota	Bifidobacteriaceae	Bifidobacterium	Bifidobacterium pullorum	Bifidobacterium		anaerobic	non-spore-forming	non-motile	Gram-positive
+Bifidobacterium longum subsp. infantis	Actinomycetota	Bifidobacteriaceae	Bifidobacterium	Bifidobacterium longum	Bifidobacterium	Intestine	anaerobic	non-spore-forming	non-motile	Gram-positive
+Bifidobacterium longum subsp. longum	Actinomycetota	Bifidobacteriaceae	Bifidobacterium	Bifidobacterium longum	Bifidobacterium	Intestine	anaerobic	-	-	Gram-positive
+Bifidobacterium longum subsp. suis	Actinomycetota	Bifidobacteriaceae	Bifidobacterium	Bifidobacterium longum	Bifidobacterium	Intestine	anaerobic	non-spore-forming	non-motile	Gram-positive
+Bifidobacterium pseudolongum subsp. globosum	Actinomycetota	Bifidobacteriaceae	Bifidobacterium	Bifidobacterium pseudolongum	Bifidobacterium	Rumen	strictly anaerobic	non-spore-forming	non-motile	Gram-positive
+Bifidobacterium pseudolongum subsp. pseudolongum	Actinomycetota	Bifidobacteriaceae	Bifidobacterium	Bifidobacterium pseudolongum	Bifidobacterium	Intestine	strictly anaerobic	non-spore-forming	non-motile	Gram-positive
+Bifidobacterium reuteri	Actinomycetota	Bifidobacteriaceae	Bifidobacterium	Bifidobacterium reuteri	Bifidobacterium	Intestine	facultatively anaerobic	-	-	Gram-positive
+Bifidobacterium saguini	Actinomycetota	Bifidobacteriaceae	Bifidobacterium	Bifidobacterium saguini	Bifidobacterium	Intestine	facultatively anaerobic	non-spore-forming	non-motile	Gram-positive
+Bifidobacterium scardovii	Actinomycetota	Bifidobacteriaceae	Bifidobacterium	Bifidobacterium scardovii	Bifidobacterium	Clinical	facultatively anaerobic	spore-forming	non-motile	Gram-positive
+Bifidobacterium subtile	Actinomycetota	Bifidobacteriaceae	Bifidobacterium	Bifidobacterium subtile	Bifidobacterium	Environment	anaerobic	-	-	-
+Bifidobacterium thermacidophilum subsp. porcinum	Actinomycetota	Bifidobacteriaceae	Bifidobacterium	Bifidobacterium porcinum	Bifidobacterium	Intestine	strictly anaerobic	non-spore-forming	non-motile	Gram-positive
+Bifidobacterium tsurumiense	Actinomycetota	Bifidobacteriaceae	Bifidobacterium	Bifidobacterium tsurumiense	Bifidobacterium	Oral	facultatively anaerobic	non-spore-forming	non-motile	Gram-positive
+Bilophila wadsworthia	Thermodesulfobacteriota	Desulfovibrionaceae	Bilophila	Bilophila wadsworthia	Sulphate reducer	Clinical	anaerobic	non-spore-forming	non-motile	Gram-negative
+Blautia coccoides	Bacillota	Lachnospiraceae	Blautia	Blautia coccoides	Acetogen	Intestine	obligately anaerobic	spore-forming	non-motile	Gram-positive
+Burkholderia acidipaludis	Pseudomonadota	Burkholderiaceae	Paraburkholderia	Paraburkholderia acidipaludis	Secondary degrader	Environment	strictly aerobic	non-spore-forming	non-motile	Gram-negative
+Butyricimonas synergistica	Bacteroidota	Odoribacteraceae	Butyricimonas	Butyricimonas synergistica	Butyrate producers	Intestine	obligately anaerobic	non-spore-forming	non-motile	Gram-negative
+Butyrivibrio proteoclasticus	Bacillota	Lachnospiraceae	Butyrivibrio	Butyrivibrio proteoclasticus	Primary degrader	Rumen	strictly anaerobic	non-spore-forming	motile	Gram-positive
+Caldanaerobius fijiensis	Bacillota	Thermoanaerobacteraceae	Caldanaerobius	Caldanaerobius fijiensis	Secondary degrader	Environment	strictly anaerobic	spore-forming	motile	Gram-positive
+Caldanaerobius polysaccharolyticus	Bacillota	Thermoanaerobacteraceae	Caldanaerobius	Caldanaerobius polysaccharolyticus	Secondary degrader	Environment	anaerobic	non-spore-forming	motile	Gram-positive
+Caloramator coolhaasii	Bacillota	Clostridiaceae	Caloramator	Caloramator coolhaasii	Secondary degrader	Environment	obligately anaerobic	non-spore-forming	non-motile	Gram-positive
+Caloramator quimbayensis	Bacillota	Clostridiaceae	Caloramator	Caloramator quimbayensis	Secondary degrader	Environment	obligately anaerobic	spore-forming	motile	Gram-positive
+Capnocytophaga canimorsus	Bacteroidota	Flavobacteriaceae	Capnocytophaga	Capnocytophaga canimorsus	Pathogen	Oral	facultatively anaerobic	non-spore-forming	motile	Gram-negative
+Catabacter hongkongensis	Bacillota	Christensenellaceae	Christensenella	Christensenella hongkongensis	Pathogen	Clinical	facultatively anaerobic	non-spore-forming	motile	Gram-positive
+Catenibacterium mitsuokai	Bacillota	Coprobacillaceae	Catenibacterium	Catenibacterium mitsuokai	Secondary degrader	Intestine	obligately anaerobic	non-spore-forming	non-motile	Gram-positive
+Cellulosibacter alkalithermophilus	Bacillota	Oscillospiraceae	Cellulosibacter	Cellulosibacter alkalithermophilus	Primary degrader	Environment	obligately anaerobic	spore-forming	motile	Gram-positive
+Christensenella minuta	Bacillota	Christensenellaceae	Christensenella	Christensenella minuta	Secondary degrader	Intestine	strictly anaerobic	non-spore-forming	non-motile	Gram-negative
+Cloacibacillus evryensis	Synergistota	Synergistaceae	Cloacibacillus	Cloacibacillus evryensis	Proteolytic bacterium	Environment	anaerobic	non-spore-forming	non-motile	Gram-negative
+Cloacibacillus porcorum	Synergistota	Synergistaceae	Cloacibacillus	Cloacibacillus porcorum	Mucin degrader	Intestine	anaerobic	non-spore-forming	non-motile	Gram-negative
+Clostridium alkalicellulosi	Bacillota	Oscillospiraceae	Acetivibrio	Acetivibrio alkalicellulosi	Primary degrader	Environment	anaerobic	spore-forming	non-motile	Gram-positive
+Clostridium aminophilum	Bacillota	Lachnospiraceae	Lachnoclostridium	[Clostridium] aminophilum	Proteolytic bacterium	Rumen	Obligately anaerobic	spore-forming	non-motile	Gram-positive
+Clostridium amygdalinum	Bacillota	Lachnospiraceae	Lacrimispora	Lacrimispora amygdalina	Primary degrader	Environment	anaerobic	spore-forming	motile	Gram-positive
+Clostridium caenicola	Bacillota	Oscillospiraceae	Thermoclostridium	Thermoclostridium caenicola	Secondary degrader	Environment	obligately anaerobic	spore-forming	motile	Gram-negative
+Clostridium celerecrescens	Bacillota	Lachnospiraceae	Lacrimispora	Lacrimispora celerecrescens	Primary degrader	Environment	obligately anaerobic	spore-forming	motile	Gram-positive
+Clostridium cellobioparum	Bacillota	Oscillospiraceae	Ruminiclostridium	Ruminiclostridium cellobioparum	Primary degrader	Rumen	anaerobic	spore-forming	motile	
+Clostridium cellulolyticum	Bacillota	Oscillospiraceae	Ruminiclostridium	Ruminiclostridium cellulolyticum	Primary degrader	Environment	anaerobic	spore-forming	motile	Gram-positive
+Clostridium cellulosi	Bacillota	Oscillospiraceae	Unclassified	[Clostridium] cellulosi	Primary degrader	Environment	Strictly anaerobic	spore-forming	motile	Gram-negative
+Clostridium clariflavum	Bacillota	Oscillospiraceae	Acetivibrio	Acetivibrio clariflavus	Primary degrader	Environment	Moderately anaerobic	spore-forming	non-motile	Gram-positive
+Clostridium glycyrrhizinilyticum	Bacillota	Lachnospiraceae	Mediterraneibacter	Mediterraneibacter glycyrrhizinilyticus	Secondary degrader	Intestine	Obligately anaerobic	non-spore-forming	non-motile	Gram-positive
+Clostridium herbivorans	Bacillota	Lachnospiraceae	Lachnoclostridium	[Clostridium] herbivorans	Primary degrader	Intestine	obligately anaerobic	spore-forming	motile	Gram-positive
+Clostridium hungatei	Bacillota	Oscillospiraceae	Ruminiclostridium	Ruminiclostridium hungatei	Primary degrader	Environment	obligately anaerobic	spore-forming	motile	Gram-negative
+Clostridium jejuense	Bacillota	Lachnospiraceae	Anaerocolumna	Anaerocolumna jejuensis	Primary degrader	Environment	strictly anaerobic	spore-forming	motile	Gram-positive
+Clostridium lactatifermentans	Bacillota	Lachnospiraceae	Anaerotignum	Anaerotignum lactatifermentans	Secondary degrader	Intestine	obligately anaerobic	non-spore-forming	non-motile	Gram-negative
+Clostridium leptum	Bacillota	Oscillospiraceae	Unclassified	[Clostridium] leptum	PBA converting bacterium	Intestine	Obligately anaerobic	spore-forming	non-motile	Gram-positive
+Clostridium methoxybenzovorans	Bacillota	Lachnospiraceae	Lachnoclostridium	[Clostridium] methoxybenzovorans	Acetogen	Environment	strictly anaerobic	spore-forming	non-motile	Gram-positive
+Clostridium methylpentosum	Bacillota	Oscillospiraceae	Unclassified	[Clostridium] methylpentosum	Secondary degrader	Intestine	obligately anaerobic	spore-forming	non-motile	Gram-positive
+Clostridium neopropionicum	Bacillota	Lachnospiraceae	Anaerotignum	Anaerotignum neopropionicum	Secondary degrader	Environment		spore-forming	motile	Gram-negative
+Clostridium nexile	Bacillota	Lachnospiraceae	Tyzzerella	[Clostridium] nexile	Secondary degrader	Intestine	anaerobic	spore-forming	non-motile	Gram-positive
+Clostridium oroticum	Bacillota	Lachnospiraceae	Faecalicatena	Faecalicatena orotica	Primary degrader	Environment	anaerobic	spore-forming	non-motile	Gram-positive
+Clostridium papyrosolvens	Bacillota	Oscillospiraceae	Ruminiclostridium	Ruminiclostridium papyrosolvens	Primary degrader	Environment	obligately anaerobic	spore-forming	motile	Gram-negative
+Clostridium propionicum	Bacillota	Lachnospiraceae	Anaerotignum	Anaerotignum propionicum	Proteolytic bacterium	Environment	anaerobic	non-spore-forming	-	Gram-positive
+Clostridium rectum	Fusobacteriota	Fusobacteriaceae	Fusobacterium	Fusobacterium mortiferum	Fusobacterium	Oral	anaerobic			Gram-negative
+Clostridium scindens	Bacillota	Lachnospiraceae	Lachnoclostridium	[Clostridium] scindens	PBA converting bacterium	Intestine	anaerobic	non-spore-forming	non-motile	Gram-positive
+Clostridium straminisolvens	Bacillota	Oscillospiraceae	Acetivibrio	Acetivibrio straminisolvens	Primary degrader	Environment	anaerobic	spore-forming	non-motile	-
+Clostridium sufflavum	Bacillota	Oscillospiraceae	Ruminiclostridium	Ruminiclostridium sufflavum	Primary degrader	Environment	strictly anaerobic	spore-forming	motile	Gram-negative
+Clostridium termitidis	Bacillota	Oscillospiraceae	Ruminiclostridium	Ruminiclostridium cellobioparum	Primary degrader	Intestine	anaerobic	spore-forming	motile	Gram-positive
+Clostridium thermocellum	Bacillota	Oscillospiraceae	Acetivibrio	Acetivibrio thermocellus	Primary degrader	Environment	Anaerobic	spore-forming	motile	Gram-negative
+Clostridium thermopalmarium	Bacillota	Clostridiaceae	Clostridium	Clostridium thermopalmarium	Butyrate producers	Environment	strictly anaerobic	spore-forming	motile	Gram-positive
+Clostridium thermosuccinogenes	Bacillota	Oscillospiraceae	Pseudoclostridium	Pseudoclostridium thermosuccinogenes	Secondary degrader	Environment	strictly anaerobic	spore-forming	motile	Gram-negative
+Clostridium viride	Bacillota	Oscillospiraceae	Unclassified	[Clostridium] viride	Asaccharolytic bacterium	Environment	strictly anaerobic	non-spore-forming	motile	Gram-positive
+Coenonia anatina	Bacteroidota	Flavobacteriaceae	Coenonia	Coenonia anatina	Pathogen	Clinical	aerobic	non-spore-forming	non-motile	Gram-negative
+Collinsella aerofaciens	Actinomycetota	Coriobacteriaceae	Collinsella	Collinsella aerofaciens	Secondary degrader	Intestine	obligately anaerobic	spore-forming	motile	Gram-positive
+Comamonas jiangduensis	Pseudomonadota	Comamonadaceae	Comamonas	Comamonas jiangduensis	Asaccharolytic bacterium	Environment	aerobic	non-spore-forming	motile	Gram-positive
+Comamonas nitrativorans	Pseudomonadota	Comamonadaceae	Comamonas	Comamonas nitrativorans	Asaccharolytic bacterium	Environment			motile	Gram-negative
+Defluviitalea saccharophila	Bacillota	Defluviitaleaceae	Defluviitalea	Defluviitalea saccharophila	Secondary degrader	Environment	Anaerobic	spore-forming	non-motile	Gram-positive
+Desulfomicrobium escambiense	Thermodesulfobacteriota	Desulfomicrobiaceae	Desulfomicrobium	Desulfomicrobium escambiense	Sulphate reducer	Environment	anaerobic	non-spore-forming		Gram-negative
+Desulfosporosinus burensis	Bacillota	Desulfitobacteriaceae	Desulfosporosinus	Desulfosporosinus burensis	Sulphate reducer	Environment	anaerobic	spore-forming	non-motile	Gram-positive
+Desulfosporosinus hippei	Bacillota	Desulfitobacteriaceae	Desulfosporosinus	Desulfosporosinus hippei	Sulphate reducer	Environment	anaerobic	spore-forming	motile	Gram-negative
+Desulfosporosinus meridiei	Bacillota	Desulfitobacteriaceae	Desulfosporosinus	Desulfosporosinus meridiei	Sulphate reducer	Environment	anaerobic	spore-forming	motile	Gram-negative
+Desulfovibrio intestinalis	Thermodesulfobacteriota	Desulfovibrionaceae	Desulfovibrio	Desulfovibrio intestinalis	Sulphate reducer	Intestine	anaerobic	-	motile	Gram-negative
+Desulfovibrio legallii	Thermodesulfobacteriota	Desulfovibrionaceae	Desulfovibrio	Desulfovibrio legallii	Sulphate reducer	Environment	strictly anaerobic	non-spore-forming	motile	Gram-negative
+Desulfovibrio piger	Thermodesulfobacteriota	Desulfovibrionaceae	Desulfovibrio	Desulfovibrio piger	Sulphate reducer	Intestine	obligately anaerobic	non-spore-forming	non-motile	Gram-negative
+Desulfovibrio simplex	Thermodesulfobacteriota	Desulfovibrionaceae	Desulfovibrio	Desulfovibrio simplex	Sulphate reducer	Environment	strictly anaerobic	non-spore-forming	motile	Gram-negative
+Desulfovibrio vulgaris	Thermodesulfobacteriota	Desulfovibrionaceae	Desulfovibrio	Desulfovibrio vulgaris	Sulphate reducer	Environment	anaerobic	non-spore-forming	motile	Gram-negative
+Dethiosulfatibacter aminovorans	Bacillota	Unclassified	Dethiosulfatibacter	Dethiosulfatibacter aminovorans	Sulphate reducer	Environment	anaerobic	non-spore-forming	non-motile	Gram-negative
+Dorea formicigenerans	Bacillota	Lachnospiraceae	Dorea	Dorea formicigenerans	Secondary degrader	Intestine	obligately anaerobic	non-spore-forming	non-motile	Gram-positive
+Dorea longicatena	Bacillota	Lachnospiraceae	Dorea	Dorea longicatena	Secondary degrader	Intestine	obligately anaerobic	non-spore-forming	non-motile	Gram-positive
+Eggerthella sinensis	Actinomycetota	Eggerthellaceae	Eggerthella	Eggerthella sinensis	Pathogen	Clinical	obligately anaerobic	non-spore-forming	non-motile	Gram-positive
+Eisenbergiella tayi	Bacillota	Lachnospiraceae	Eisenbergiella	Eisenbergiella tayi	Pathogen	Clinical	strictly anaerobic	non-spore-forming	non-motile	Gram-negative
+Enterorhabdus mucosicola	Actinomycetota	Eggerthellaceae	Adlercreutzia	Adlercreutzia mucosicola	Flavonoid-degrading bacterium	Intestine	anaerobic	non-spore-forming	non-motile	Gram-positive
+Ethanoligenens harbinense	Bacillota	Oscillospiraceae	Ethanoligenens	Ethanoligenens harbinense	Primary degrader	Environment	strictly anaerobic	non-spore-forming	non-motile	Gram-positive
+Eubacterium brachy	Bacillota	Eubacteriales Family XIII. Incertae Sedis	Unclassified	[Eubacterium] brachy	Asaccharolytic bacterium	Oral	obligately anaerobic	non-spore-forming	non-motile	Gram-positive
+Eubacterium callanderi	Bacillota	Eubacteriaceae	Eubacterium	Eubacterium callanderi	Acetogen	Environment	obligately anaerobic	non-spore-forming	-	Gram-positive
+Eubacterium contortum	Bacillota	Lachnospiraceae	Faecalicatena	Faecalicatena contorta	Secondary degrader	Intestine	obligately anaerobic	non-spore-forming	non-motile	Gram-positive
+Eubacterium eligens	Bacillota	Lachnospiraceae	Lachnospira	Lachnospira eligens	Primary degrader	Intestine	anaerobic	non-spore-forming	-	Gram-positive
+Eubacterium limosum	Bacillota	Eubacteriaceae	Eubacterium	Eubacterium limosum	Acetogen	Rumen	anaerobic	non-spore-forming	non-motile	Gram-positive
+Eubacterium nitritogenes	Bacillota	Clostridiaceae	Clostridium	Clostridium nitritogenes	Secondary degrader	Environment	anaerobic	non-spore-forming	non-motile	
+Eubacterium sulci	Bacillota	Eubacteriales Family XIII. Incertae Sedis	Unclassified	[Eubacterium] sulci	Asaccharolytic bacterium	Oral	obligately anaerobic	non-spore-forming	non-motile	Gram-negative
+Eubacterium tortuosum	Bacillota	Erysipelotrichaceae	Amedibacterium	Absiella tortuosum	Secondary degrader	Clinical		non-spore-forming		
+Eubacterium xylanophilum	Bacillota	Eubacteriaceae	Eubacterium	Eubacterium xylanophilum	Primary degrader	Rumen	obligately anaerobic	non-spore-forming	motile	Gram-positive
+Faecalibacterium prausnitzii	Bacillota	Oscillospiraceae	Faecalibacterium	Faecalibacterium prausnitzii	Butyrate producers	Intestine	strictly anaerobic	non-spore-forming	non-motile	Gram-negative
+Faecalicoccus acidiformans	Bacillota	Erysipelotrichaceae	Faecalicoccus	Faecalicoccus acidiformans	Lactic acid bacterium	Intestine	anaerobic	non-spore-forming	non-motile	Gram-positive
+Filifactor alocis	Bacillota	Peptostreptococcaceae	Filifactor	Filifactor alocis	Asaccharolytic bacterium	Oral	obligately anaerobic	non-spore-forming	non-motile	Gram-negative
+Finegoldia magna	Bacillota	Peptoniphilaceae	Finegoldia	Finegoldia magna	Pathogen	Clinical	anaerobic	non-spore-forming	non-motile	Gram-positive
+Flavobacterium indicum	Bacteroidota	Flavobacteriaceae	Flavobacterium	Flavobacterium indicum	Asaccharolytic bacterium	Environment	strictly aerobic		non-motile	Gram-negative
+Flavonifractor plautii	Bacillota	Oscillospiraceae	Flavonifractor	Flavonifractor plautii	Flavonoid-degrading bacterium	Intestine				
+Fusicatenibacter saccharivorans	Bacillota	Lachnospiraceae	Fusicatenibacter	Fusicatenibacter saccharivorans	Secondary degrader	Intestine	obligately anaerobic	non-spore-forming	non-motile	Gram-positive
+Fusobacterium equinum	Fusobacteriota	Fusobacteriaceae	Fusobacterium	Fusobacterium equinum	Fusobacterium	Oral	anaerobe		non-motile	Gram-positive
+Fusobacterium gonidiaformans	Fusobacteriota	Fusobacteriaceae	Fusobacterium	Fusobacterium gonidiaformans	Fusobacterium		anaerobe	non-spore-forming	non-motile	Gram-negative
+Fusobacterium mortiferum	Fusobacteriota	Fusobacteriaceae	Fusobacterium	Fusobacterium mortiferum	Fusobacterium	Oral	anaerobic			Gram-negative
+Fusobacterium necrophorum subsp. funduliforme	Fusobacteriota	Fusobacteriaceae	Fusobacterium	Fusobacterium necrophorum	Fusobacterium	Oral	strictly anaerobic	non-spore-forming	non-motile	Gram-negative
+Fusobacterium necrophorum subsp. necrophorum	Fusobacteriota	Fusobacteriaceae	Fusobacterium	Fusobacterium necrophorum	Fusobacterium	Oral	strictly anaerobic	non-spore-forming	non-motile	Gram-negative
+Fusobacterium ulcerans	Fusobacteriota	Fusobacteriaceae	Fusobacterium	Fusobacterium ulcerans	Fusobacterium	Other Site	obligately anaerobic	non-spore-forming	non-motile	Gram-negative
+Fusobacterium varium	Fusobacteriota	Fusobacteriaceae	Fusobacterium	Fusobacterium varium	Fusobacterium	Intestine	anaerobe	non-spore-forming	non-motile	Gram-negative
+Gardnerella vaginalis	Actinomycetota	Bifidobacteriaceae	Gardnerella	Gardnerella vaginalis	Pathogen	Clinical	facultatively anaerobic	non-spore-forming	non-motile	Gram-negative
+Herminiimonas fonticola	Pseudomonadota	Oxalobacteraceae	Herminiimonas	Herminiimonas fonticola	Proteolytic bacterium	Environment	Strictly aerobic	-	motile	Gram-negative
+Hespellia porcina	Bacillota	Lachnospiraceae	Hespellia	Hespellia porcina	Secondary degrader	Intestine	obligately anaerobic	non-spore-forming	non-motile	Gram-positive
+Holdemanella biformis	Bacillota	Erysipelotrichaceae	Holdemanella	Holdemanella biformis	Secondary degrader	Intestine	strictly anaerobic	non-spore-forming	non-motile	Gram-positive
+Holdemania filiformis	Bacillota	Erysipelotrichaceae	Holdemania	Holdemania filiformis	Secondary degrader	Intestine	anaerobic	non-spore-forming	-	Gram-positive
+Hungatella hathewayi	Bacillota	Clostridiaceae	Hungatella	Hungatella hathewayi	Secondary degrader	Intestine	strictly anaerobic	spore-forming	non-motile	Gram-negative
+Hydrogenoanaerobacterium saccharovorans	Bacillota	Oscillospiraceae	Hydrogenoanaerobacterium	Hydrogenoanaerobacterium saccharovorans	Secondary degrader	Environment	obligately anaerobic	non-spore-forming	non-motile	Gram-negative
+Hymenobacter koreensis	Bacteroidota	Hymenobacteraceae	Hymenobacter	Hymenobacter koreensis	Secondary degrader	Environment	aerobic	-	non-motile	Gram-negative
+Hymenobacter ocellatus	Bacteroidota	Hymenobacteraceae	Hymenobacter	Hymenobacter ocellatus	Asaccharolytic bacterium	Environment	-	-	non-motile	Gram-negative
+Ilyobacter insuetus	Fusobacteriota	Fusobacteriaceae	Ilyobacter	Ilyobacter insuetus	Asaccharolytic bacterium	Environment	strictly anaerobic		non-motile	Gram-negative
+Intestinimonas butyriciproducens	Bacillota	Unclassified	Intestinimonas	Intestinimonas butyriciproducens	Butyrate producers	Intestine	strictly anaerobic	spore-forming	non-motile	Gram-positive
+Lachnospira multipara	Bacillota	Lachnospiraceae	Lachnospira	Lachnospira multipara	Primary degrader	Rumen	anaerobic	non-spore-forming	motile	Gram-positive
+Lactobacillus composti	Bacillota	Lactobacillaceae	Agrilactobacillus	Agrilactobacillus composti	Lactic acid bacterium	Environment	facultatively anaerobic	-	non-motile	Gram-positive
+Lactobacillus curieae	Bacillota	Lactobacillaceae	Lentilactobacillus	Lentilactobacillus curieae	Lactic acid bacterium	Environment	facultatively anaerobic	non-spore-forming	non-motile	Gram-positive
+Lactobacillus mellifer	Bacillota	Lactobacillaceae	Bombilactobacillus	Bombilactobacillus mellifer	Lactic acid bacterium	Intestine	facultatively anaerobic	non-spore-forming	non-motile	Gram-positive
+Lactobacillus rogosae	Bacillota	Lactobacillaceae	Lactobacillus	Lactobacillus rogosae	Lactic acid bacterium	Intestine	obligately anaerobic	non-spore-forming	motile	Gram-positive
+Lactobacillus ruminis	Bacillota	Lactobacillaceae	Ligilactobacillus	Ligilactobacillus ruminis	Lactic acid bacterium	Rumen	anaerobic	non-spore-forming	motile	Gram-positive
+Lactobacillus senioris	Bacillota	Lactobacillaceae	Lentilactobacillus	Lentilactobacillus senioris	Lactic acid bacterium	Intestine	facultatively anaerobic	spore-forming	non-motile	Gram-positive
+Lactobacillus similis	Bacillota	Lactobacillaceae	Secundilactobacillus	Secundilactobacillus similis	Lactic acid bacterium	Environment	anaerobic	non-spore-forming	non-motile	Gram-positive
+Lawsonia intracellularis	Thermodesulfobacteriota	Desulfovibrionaceae	Lawsonia	Lawsonia intracellularis	Pathogen	Intestine		non-spore-forming	non-motile	Gram-negative
+Macellibacteroides fermentans	Bacteroidota	Porphyromonadaceae	Macellibacteroides	Macellibacteroides fermentans	Secondary degrader	Environment	obligately anaerobic	non-spore-forming	non-motile	Gram-positive
+Mariniphaga anaerophila	Bacteroidota	Prolixibacteraceae	Mariniphaga	Mariniphaga anaerophila	Secondary degrader	Environment	facultatively aerobic	non-spore-forming	non-motile	Gram-negative
+Marvinbryantia formatexigens	Bacillota	Lachnospiraceae	Marvinbryantia	Marvinbryantia formatexigens	Primary degrader	Intestine	strictly anaerobic		non-motile	Gram-positive
+Mechercharimyces asporophorigenens	Bacillota	Thermoactinomycetaceae	Mechercharimyces	Mechercharimyces asporophorigenens	Asaccharolytic bacterium	Environment	aerobic	spore-forming		Gram-positive
+Mechercharimyces mesophilus	Bacillota	Thermoactinomycetaceae	Mechercharimyces	Mechercharimyces mesophilus	Asaccharolytic bacterium	Environment	aerobic	spore-forming		Gram-positive
+Methanobrevibacter boviskoreani	Euryarchaeota	Methanobacteriaceae	Methanobrevibacter	Methanobrevibacter boviskoreani	Methanogen	Rumen	strictly anaerobic	-	non-motile	Gram-positive
+Methanobrevibacter gottschalkii	Euryarchaeota	Methanobacteriaceae	Methanobrevibacter	Methanobrevibacter gottschalkii	Methanogen	Intestine	strictly anaerobic	-	-	Gram-positive
+Methanobrevibacter millerae	Euryarchaeota	Methanobacteriaceae	Methanobrevibacter	Methanobrevibacter millerae	Methanogen	Rumen	-	-	non-motile	Gram-positive
+Methanobrevibacter smithii	Euryarchaeota	Methanobacteriaceae	Methanobrevibacter	Methanobrevibacter smithii	Methanogen	Intestine	anaerobic	-	non-motile	Gram-positive
+Methanobrevibacter thaueri	Euryarchaeota	Methanobacteriaceae	Methanobrevibacter	Methanobrevibacter thaueri	Methanogen	Intestine	strictly anaerobic	-	-	Gram-positive
+Methanobrevibacter woesei	Euryarchaeota	Methanobacteriaceae	Methanobrevibacter	Methanobrevibacter woesei	Methanogen	Intestine	strictly anaerobic	-	-	Gram-positive
+Natranaerovirga pectinivora	Bacillota	Unclassified	Natranaerovirga	Natranaerovirga pectinivora	Primary degrader	Environment	strictly anaerobic	spore-forming	non-motile	Gram-positive
+Noviherbaspirillum aurantiacum	Pseudomonadota	Oxalobacteraceae	Noviherbaspirillum	Noviherbaspirillum aurantiacum	Secondary degrader	Environment	aerobic	non-spore-forming	motile	Gram-negative
+Noviherbaspirillum canariense	Pseudomonadota	Oxalobacteraceae	Noviherbaspirillum	Noviherbaspirillum canariense	Asaccharolytic bacterium	Environment	aerobic	non-spore-forming	motile	Gram-negative
+Odoribacter laneus	Bacteroidota	Odoribacteraceae	Odoribacter	Odoribacter laneus	Asaccharolytic bacterium	Intestine	obligately anaerobic	non-spore-forming	non-motile	Gram-negative
+Odoribacter splanchnicus	Bacteroidota	Odoribacteraceae	Odoribacter	Odoribacter splanchnicus	Butyrate producers	Intestine	anaerobic	non-spore-forming	non-motile	Gram-negative
+Olivibacter sitiensis	Bacteroidota	Sphingobacteriaceae	Olivibacter	Olivibacter sitiensis	Secondary degrader	Environment		non-spore-forming	non-motile	Gram-negative
+Olsenella profusa	Actinomycetota	Atopobiaceae	Olsenella	Olsenella profusa	Lactic acid bacterium	Oral	obligately anaerobic	non-spore-forming	non-motile	Gram-positive
+Olsenella scatoligenes	Actinomycetota	Atopobiaceae	Tractidigestivibacter	Tractidigestivibacter scatoligenes	Lactic acid bacterium	Intestine	strictly anaerobic	non-spore-forming	non-motile	Gram-positive
+Olsenella uli	Actinomycetota	Atopobiaceae	Olsenella	Olsenella uli	Lactic acid bacterium	Oral	strictly anaerobic		non-motile	Gram-positive
+Olsenella umbonata	Actinomycetota	Atopobiaceae	Parafannyhessea	Parafannyhessea umbonata	Mucin degrader	Rumen	anaerobic	non-spore-forming	non-motile	Gram-positive
+Paenibacillus turicensis	Bacillota	Paenibacillaceae	Paenibacillus	Paenibacillus turicensis	Pathogen	Clinical	facultatively anaerobic	spore-forming	motile	Gram-positive
+Papillibacter cinnamivorans	Bacillota	Oscillospiraceae	Papillibacter	Papillibacter cinnamivorans	Asaccharolytic bacterium	Environment	strictly anaerobic	non-spore-forming	non-motile	Gram-positive
+Parabacteroides faecis	Bacteroidota	Tannerellaceae	Parabacteroides	Parabacteroides faecis	Secondary degrader	Intestine	obligately anaerobic	non-spore-forming	non-motile	Gram-negative
+Parabacteroides goldsteinii	Bacteroidota	Tannerellaceae	Parabacteroides	Parabacteroides goldsteinii	Secondary degrader	Intestine	obligately anaerobic	non-spore-forming	non-motile	Gram-negative
+Parabacteroides gordonii	Bacteroidota	Tannerellaceae	Parabacteroides	Parabacteroides gordonii	Pathogen	Clinical	obligately anaerobic	non-spore-forming	non-motile	Gram-negative
+Paraglaciecola psychrophila	Pseudomonadota	Alteromonadaceae	Paraglaciecola	Paraglaciecola psychrophila	Secondary degrader	Environment	anaerobic	-	motile	Gram-negative
+Pedobacter terricola	Bacteroidota	Sphingobacteriaceae	Pedobacter	Pedobacter terricola	Secondary degrader	Environment		non-spore-forming	non-motile	Gram-negative
+Phascolarctobacterium succinatutens	Bacillota	Acidaminococcaceae	Phascolarctobacterium	Phascolarctobacterium succinatutens	Asaccharolytic bacterium	Intestine	strictly anaerobic	non-spore-forming	non-motile	Gram-negative
+Porphyromonas asaccharolytica	Bacteroidota	Porphyromonadaceae	Porphyromonas	Porphyromonas asaccharolytica	Asaccharolytic bacterium	Clinical	obligately anaerobic	non-spore-forming	non-motile	Gram-negative
+Prevotella copri	Bacteroidota	Prevotellaceae	Segatella	Segatella copri	Primary degrader	Intestine	anaerobic	non-spore-forming	non-motile	Gram-negative
+Prevotella denticola	Bacteroidota	Prevotellaceae	Prevotella	Prevotella denticola	Secondary degrader	Oral	anaerobic	non-spore-forming	non-motile	Gram-negative
+Prevotella falsenii	Bacteroidota	Prevotellaceae	Prevotella	Prevotella falsenii	Secondary degrader	Oral	obligately anaerobic	non-spore-forming	non-motile	Gram-negative
+Prevotella intermedia	Bacteroidota	Prevotellaceae	Prevotella	Prevotella intermedia	Proteolytic bacterium	Oral	obligately anaerobic	non-spore-forming	non-motile	Gram-negative
+Prevotella jejuni	Bacteroidota	Prevotellaceae	Prevotella	Prevotella jejuni	Secondary degrader	Clinical	obligately anaerobic	non-spore-forming	non-motile	Gram-negative
+Prevotella melaninogenica	Bacteroidota	Prevotellaceae	Prevotella	Prevotella melaninogenica	Proteolytic bacterium	Oral	obligately anaerobic	non-spore-forming	non-motile	Gram-negative
+Prevotella micans	Bacteroidota	Prevotellaceae	Prevotella	Prevotella micans	Secondary degrader	Oral	obligately anaerobic	non-spore-forming	non-motile	Gram-negative
+Prevotella multisaccharivorax	Bacteroidota	Prevotellaceae	Hallella	Hallella multisaccharivorax	Secondary degrader	Oral	obligately anaerobic	non-spore-forming	non-motile	Gram-negative
+Proteinivorax tanatarense	Bacillota	Proteinivoraceae	Proteinivorax	Proteinivorax tanatarense	Proteolytic bacterium	Environment	anaerobic	spore-forming	non-motile	Gram-positive
+Pseudoclavibacter caeni	Actinomycetota	Microbacteriaceae	Pseudoclavibacter	Pseudoclavibacter caeni	Secondary degrader	Environment	strictly aerobic	non-spore-forming	non-motile	Gram-positive
+Pseudoclavibacter soli	Actinomycetota	Microbacteriaceae	Pseudoclavibacter	Pseudoclavibacter soli	Asaccharolytic bacterium	Environment	aerobic		non-motile	Gram-positive
+Pseudoduganella violaceinigra	Pseudomonadota	Oxalobacteraceae	Pseudoduganella	Pseudoduganella violaceinigra	Secondary degrader	Environment	obligate aerobic 	non-spore-forming	motile	Gram-negative
+Pseudoflavonifractor capillosus	Bacillota	Oscillospiraceae	Pseudoflavonifractor	Pseudoflavonifractor capillosus	Secondary degrader	Intestine	strictly anaerobic	non-spore-forming	non-motile	Gram-negative
+Roseburia faecis	Bacillota	Lachnospiraceae	Roseburia	Roseburia faecis	Butyrate producers	Intestine	strictly anaerobic		motile	Gram-variable
+Ruminococcus obeum	Bacillota	Lachnospiraceae	Blautia	Blautia obeum	Secondary degrader	Intestine	anaerobic	non-spore-forming	non-motile	Gram-positive
+Ruminococcus torques	Bacillota	Lachnospiraceae	Mediterraneibacter	[Ruminococcus] torques	Mucin degrader	Intestine	Obligately anaerobic		non-motile	Gram-positive
+Rummeliibacillus suwonensis	Bacillota	Planococcaceae	Rummeliibacillus	Rummeliibacillus suwonensis	Asaccharolytic bacterium	Environment	facultatively aerobic	spore-forming	non-motile	Gram-positive
+Saccharofermentans acetigenes	Bacillota	Oscillospiraceae	Saccharofermentans	Saccharofermentans acetigenes	Acetogen	Environment	anaerobic	spore-forming	non-motile	Gram-positive
+Salegentibacter chungangensis	Bacteroidota	Flavobacteriaceae	Salegentibacter	Salegentibacter chungangensis	Asaccharolytic bacterium	Environment	obligate aerobic 	non-spore-forming	non-motile	Gram-negative
+Senegalimassilia anaerobia	Actinomycetota	Coriobacteriaceae	Senegalimassilia	Senegalimassilia anaerobia	Asaccharolytic bacterium	Intestine	Strictly anaerobic	non-spore-forming	motile	Gram-positive
+Slackia equolifaciens	Actinomycetota	Eggerthellaceae	Slackia	Slackia equolifaciens	Equol-producing bacterium	Intestine	anaerobic	non-spore-forming	non-motile	Gram-positive
+Slackia faecicanis	Actinomycetota	Eggerthellaceae	Slackia	Slackia faecicanis	Asaccharolytic bacterium	Intestine	strictly anaerobic	non-spore-forming		Gram-positive
+Slackia heliotrinireducens	Actinomycetota	Eggerthellaceae	Slackia	Slackia heliotrinireducens	Asaccharolytic bacterium	Rumen	Obligately anaerobic	non-spore-forming	non-motile	Gram-negative
+Slackia isoflavoniconvertens	Actinomycetota	Eggerthellaceae	Slackia	Slackia isoflavoniconvertens	Equol-producing bacterium	Intestine	strictly anaerobic	non-spore-forming	-	Gram-positive
+Slackia piriformis 	Actinomycetota	Eggerthellaceae	Slackia	Slackia piriformis 	Asaccharolytic bacterium	Intestine	obligately anaerobic	non-spore-forming	non-motile	Gram-positive
+Syntrophococcus sucromutans	Bacillota	Lachnospiraceae	Syntrophococcus	Syntrophococcus sucromutans	Acetogen	Rumen	Strictly anaerobic	non-spore-forming	non-motile	Gram-negative
+Thermoanaerobacterium aciditolerans	Bacillota	Thermoanaerobacteraceae	Thermoanaerobacterium	Thermoanaerobacterium aciditolerans	Primary degrader	Environment	obligately anaerobic	spore-forming	motile	Gram-positive
+Thermoanaerobacterium aotearoense	Bacillota	Thermoanaerobacteraceae	Thermoanaerobacterium	Thermoanaerobacterium aotearoense	Primary degrader	Environment	anaerobic	spore-forming	motile	Gram-negative
+Thermoanaerobacterium saccharolyticum	Bacillota	Thermoanaerobacteraceae	Thermoanaerobacterium	Thermoanaerobacterium saccharolyticum	Primary degrader	Environment	anaerobic	non-spore-forming	motile	Gram-negative
+Thiomicrospira pelophila	Pseudomonadota	Piscirickettsiaceae	Thiomicrospira	Thiomicrospira pelophila	Sulfur-oxidizing bacteria	Environment	aerobic	non-spore-forming	motile	Gram-negative
+Thiomicrospira thyasirae	Pseudomonadota	Piscirickettsiaceae	Thiomicrospira	Thiomicrospira thyasirae	Sulfur-oxidizing bacteria	Other Site				
+Vallitalea pronyensis	Bacillota	Vallitaleaceae	Vallitalea	Vallitalea pronyensis	Secondary degrader	Environment	anaerobic	spore-forming	motile	Gram-positive
+Actinomyces odontolyticus	Actinomycetota	Actinomycetaceae	Schaalia	Schaalia odontolytica	Pathogen	Oral	anaerobic	non-spore-forming	non-motile	Gram-positive
+Bacteroides faecis	Bacteroidota	Bacteroidaceae	Bacteroides	Bacteroides faecis	Secondary degrader	Intestine	anaerobic	non-spore-forming	non-motile	Gram-negative
+Bacteroides thetaiotaomicron	Bacteroidota	Bacteroidaceae	Bacteroides	Bacteroides thetaiotaomicron	Primary degrader	Intestine	anaerobic	non-spore-forming	non-motile	Gram-negative
+Bacteroides xylanisolvens	Bacteroidota	Bacteroidaceae	Bacteroides	Bacteroides xylanisolvens	Primary degrader	Intestine	strictly anaerobic	non-spore-forming	non-motile	Gram-negative
+Clostridium symbiosum	Bacillota	Lachnospiraceae	Lachnoclostridium	[Clostridium] symbiosum	Pathogen	Clinical	anaerobic	spore-forming	motile	Gram-negative
+Fusobacterium canifelinum	Fusobacteriota	Fusobacteriaceae	Fusobacterium	Fusobacterium canifelinum	Fusobacterium	Clinical	anaerobic	non-spore-forming	non-motile	Gram-negative
+Fusobacterium necrogenes	Fusobacteriota	Fusobacteriaceae	Fusobacterium	Fusobacterium necrogenes	Fusobacterium	Intestine	anaerobic	non-spore-forming	non-motile	Gram-negative
+Fusobacterium nucleatum subsp. nucleatum	Fusobacteriota	Fusobacteriaceae	Fusobacterium	Fusobacterium nucleatum	Fusobacterium	Oral	anaerobic	non-spore-forming	non-motile	Gram-negative
+Parvimonas micra	Bacillota	Peptoniphilaceae	Parvimonas	Parvimonas micra	Pathogen	Clinical	anaerobic	non-spore-forming	non-motile	Gram-positive
+Plesiomonas shigelloides	Pseudomonadota	Enterobacteriaceae	Plesiomonas	Plesiomonas shigelloides	Pathogen	Intestine	facultatively anaerobic	non-spore-forming	motile	Gram-negative
+Roseburia intestinalis	Bacillota	Lachnospiraceae	Roseburia	Roseburia intestinalis	Butyrate producers	Intestine	anaerobic	-	motile	Gram-positive
+Ruminococcus champanellensis	Bacillota	Oscillospiraceae	Ruminococcus	Ruminococcus champanellensis	Primary degrader	Intestine	strictly anaerobic	non-spore-forming	non-motile	Gram-positive
+Slackia piriformis	Actinomycetota	Eggerthellaceae	Slackia	Slackia piriformis	Asaccharolytic bacterium	Intestine	obligately anaerobic	non-spore-forming	non-motile	Gram-positive

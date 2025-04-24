@@ -1,0 +1,325 @@
+ID	Name	Description	Mark	Path	Category	Note
+K01745	hutH	histidine ammonia-lyase	___+	Histidine metabolism	Amino acid metabolism	
+K01468	hutI	imidazolonepropionase	___+	Histidine metabolism	Amino acid metabolism	
+K13990	FTCD	glutamate formiminotransferase / formiminotetrahydrofolate cyclodeaminase	_+++	Histidine metabolism	Amino acid metabolism	
+K01666	mhpE	4-hydroxy 2-oxovalerate aldolase	_---	Phenylalanine biosynthesis and metabolism	Amino acid metabolism	
+K10797	enr	2-enoate reductase	___+	Phenylalanine biosynthesis and metabolism	Amino acid metabolism	
+K01667	tnaA	tryptophanase	_-_+	Tryptophan metabolism	Amino acid metabolism	
+K07130	kynB	arylformamidase	___+	Tryptophan metabolism	Amino acid metabolism	
+K01657	trpE	anthranilate synthase component I	___-	Tryptophan biosynthesis	Amino acid metabolism	
+K01695	trpA	tryptophan synthase alpha chain	___-	Tryptophan biosynthesis	Amino acid metabolism	
+K01696	trpB	tryptophan synthase beta chain	___-	Tryptophan biosynthesis	Amino acid metabolism	
+K00766	trpD	anthranilate phosphoribosyltransferase	-__-	Tryptophan biosynthesis	Amino acid metabolism	
+K08968	msrC	L-methionine (R)-S-oxide reductase	+_++	Methionine metabolism	Amino acid metabolism	
+K12960	mtaD	5-methylthioadenosine/S-adenosylhomocysteine deaminase	___+	Methionine metabolism	Amino acid metabolism	
+K00899	mtnK	5-methylthioribose kinase	__++	Methionine metabolism	Amino acid metabolism	
+K02052	ABC.SP.A	putative spermidine/putrescine transport system ATP-binding protein	___+	Polyamine metabolism	Amino acid metabolism	
+K02055	ABC.SP.S	putative spermidine/putrescine transport system substrate-binding protein	___+	Polyamine metabolism	Amino acid metabolism	
+K01966	PCCB	propionyl-CoA carboxylase beta chain	___+	Valine, leucine and isoleucine degradation	Amino acid metabolism	
+K00248	ACADS	butyryl-CoA dehydrogenase	___+	Valine, leucine and isoleucine degradation	Amino acid metabolism	
+K11381	bkdA	2-oxoisovalerate dehydrogenase E1 component	___+	Valine, leucine and isoleucine degradation	Amino acid metabolism	
+K00140	mmsA	malonate-semialdehyde dehydrogenase (acetylating) / methylmalonate-semialdehyde dehydrogenase	+_++	Valine, leucine and isoleucine degradation	Amino acid metabolism	
+K00020	HIBADH	3-hydroxyisobutyrate dehydrogenase	_+_+	Valine, leucine and isoleucine degradation	Amino acid metabolism	
+K00053	ilvC	ketol-acid reductoisomerase	_--_	Valine, leucine and isoleucine biosynthesis	Amino acid metabolism	
+K01652	E2.2.1.6L	acetolactate synthase I/II/III large subunit	__-_	Valine, leucine and isoleucine biosynthesis	Amino acid metabolism	
+K01703	leuC	3-isopropylmalate/(R)-2-methylmalate dehydratase large subunit	-_--	Valine, leucine and isoleucine biosynthesis	Amino acid metabolism	
+K01844	kamD	"beta-lysine 5,6-aminomutase alpha subunit"	__++	Lysine degradation	Amino acid metabolism	
+K18011	kamE	"beta-lysine 5,6-aminomutase beta subunit"	__++	Lysine degradation	Amino acid metabolism	
+K18012	kdd	"L-erythro-3,5-diaminohexanoate dehydrogenase"	__++	Lysine degradation	Amino acid metabolism	
+K01035	atoA	acetate CoA/acetoacetate CoA-transferase beta subunit	__++	Lysine degradation	Amino acid metabolism	
+K01843	kamA	"lysine 2,3-aminomutase"	___+	Lysine degradation	Amino acid metabolism	
+K18014	kal	3-aminobutyryl-CoA ammonia-lyase	___+	Lysine degradation	Amino acid metabolism	
+K01034	atoD	acetate CoA/acetoacetate CoA-transferase alpha subunit	__++	Lysine degradation	Amino acid metabolism	
+K18013	kce	3-keto-5-aminohexanoate cleavage enzyme	___+	Lysine degradation	Amino acid metabolism	
+K01714	dapA	4-hydroxy-tetrahydrodipicolinate synthase	__-_	Lysine biosynthesis	Amino acid metabolism	
+K05825	LYSN	2-aminoadipate transaminase	_-_+	Lysine biosynthesis	Amino acid metabolism	
+K00928	lysC	aspartate kinase	_-_+	Lysine biosynthesis	Amino acid metabolism	
+K01586	lysA	diaminopimelate decarboxylase	--_-	Lysine biosynthesis	Amino acid metabolism	
+K09123	lhpI	cis-L-3-hydroxyproline dehydratase	___+	Proline metabolism	Amino acid metabolism	
+K00294	E1.2.1.88	1-pyrroline-5-carboxylate dehydrogenase	+_++	Proline metabolism	Amino acid metabolism	
+K10793	prdA	D-proline reductase (dithiol) PrdA	_+_+	Proline metabolism	Amino acid metabolism	
+K01259	pip	proline iminopeptidase	+__+	Proline metabolism	Amino acid metabolism	
+K00283	gcvPB	glycine dehydrogenase subunit 2	_+_+	Glycine metabolism	Amino acid metabolism	
+K00605	gcvT	aminomethyltransferase	__++	Glycine metabolism	Amino acid metabolism	
+K00281	GLDC	glycine dehydrogenase	__+_	Glycine metabolism	Amino acid metabolism	
+K00282	gcvPA	glycine dehydrogenase subunit 1	_+_+	Glycine metabolism	Amino acid metabolism	
+K00265	gltB	glutamate synthase (NADPH) large chain	__+_	Glutamate metabolism	Amino acid metabolism	
+K01425	glsA	glutaminase	___+	Glutamate metabolism	Amino acid metabolism	
+K00266	gltD	glutamate synthase (NADPH) small chain	___-	Glutamate metabolism	Amino acid metabolism	
+K00284	GLU	glutamate synthase (ferredoxin)	----	Glutamate metabolism	Amino acid metabolism	
+K01476	E3.5.3.1	arginase	__++	Arginine biosynthesis	Amino acid metabolism	
+K00930	argB	acetylglutamate kinase	-_--	Arginine biosynthesis	Amino acid metabolism	"M00028 Ornithine biosynthesis, glutamate => ornithine"
+K00620	argJ	glutamate N-acetyltransferase / amino-acid N-acetyltransferase	-___	Arginine biosynthesis	Amino acid metabolism	
+K01438	argE	acetylornithine deacetylase	++__	Arginine biosynthesis	Amino acid metabolism	
+K00619	argA	amino-acid N-acetyltransferase	_+__	Arginine biosynthesis	Amino acid metabolism	
+K00821	argD	acetylornithine/N-succinyldiaminopimelate aminotransferase	___-	Arginine biosynthesis	Amino acid metabolism	
+K00145	argC	N-acetyl-gamma-glutamyl-phosphate reductase	___-	Arginine biosynthesis	Amino acid metabolism	
+K01478	arcA	arginine deiminase	__++	Arginine biosynthesis	Amino acid metabolism	
+K01940	argG	argininosuccinate synthase	___-	Arginine biosynthesis	Amino acid metabolism	
+K01571	oadA	oxaloacetate decarboxylase (Na+ extruding) subunit alpha	---_	Pyruvate metabolism	Carbohydrate metabolism	
+K00156	poxB	pyruvate dehydrogenase (quinone)	+_++	Pyruvate metabolism	Carbohydrate metabolism	
+K00029	E1.1.1.40	malate dehydrogenase (oxaloacetate-decarboxylating)(NADP+)	_+__	Pyruvate metabolism	Carbohydrate metabolism	
+K03778	ldhA	D-lactate dehydrogenase	_-__	Pyruvate metabolism	Carbohydrate metabolism	
+K18930	dld	D-lactate dehydrogenase	+-__	Pyruvate metabolism	Carbohydrate metabolism	
+K00027	ME2	malate dehydrogenase (oxaloacetate-decarboxylating)	__-_	Pyruvate metabolism	Carbohydrate metabolism	
+K01759	GLO1	lactoylglutathione lyase	+__+	Pyruvate metabolism	Carbohydrate metabolism	
+K01596	E4.1.1.32	phosphoenolpyruvate carboxykinase (GTP)	___+	Pyruvate metabolism	Carbohydrate metabolism	
+K00627	DLAT	pyruvate dehydrogenase E2 component (dihydrolipoamide acetyltransferase)	___+	Pyruvate metabolism	Carbohydrate metabolism	
+K00170	porB	pyruvate ferredoxin oxidoreductase beta subunit	___+	Pyruvate metabolism	Carbohydrate metabolism	
+K01958	PC	pyruvate carboxylase	___+	Pyruvate metabolism	Carbohydrate metabolism	
+K01610	E4.1.1.49	phosphoenolpyruvate carboxykinase (ATP)	___-	Pyruvate metabolism	Carbohydrate metabolism	
+K03079	ulaE	L-ribulose-5-phosphate 3-epimerase	+__+	Pentose and glucuronate interconversions	Carbohydrate metabolism	
+K21030	tarI	D-ribitol-5-phosphate cytidylyltransferase	__-_	Pentose and glucuronate interconversions	Carbohydrate metabolism	
+K00880	lyxK	L-xylulokinase	__++	Pentose and glucuronate interconversions	Carbohydrate metabolism	
+K09988	lyxA	D-lyxose ketol-isomerase	___+	Pentose and glucuronate interconversions	Carbohydrate metabolism	
+K05352	tarJ	ribitol-5-phosphate 2-dehydrogenase (NADP+)	___+	Pentose and glucuronate interconversions	Carbohydrate metabolism	
+K00040	uxuB	fructuronate reductase	___-	Pentose and glucuronate interconversions	Carbohydrate metabolism	
+K01812	uxaC	glucuronate isomerase	_-_-	Pentose and glucuronate interconversions	Carbohydrate metabolism	
+K01815	kduI	4-deoxy-L-threo-5-hexosulose-uronate ketol-isomerase	___-	Pentose and glucuronate interconversions	Carbohydrate metabolism	
+K01621	xfp	xylulose-5-phosphate/fructose-6-phosphate phosphoketolase	---_	Pentose phosphate pathway	Carbohydrate metabolism	
+K11529	gck	glycerate 2-kinase	---_	Pentose phosphate pathway	Carbohydrate metabolism	
+K00616	E2.2.1.2	transaldolase	_-__	Pentose phosphate pathway	Carbohydrate metabolism	
+K06859	pgi1	"glucose-6-phosphate isomerase, archaeal"	___+	Pentose phosphate pathway	Carbohydrate metabolism	
+K01808	rpiB	ribose 5-phosphate isomerase B	___+	Pentose phosphate pathway	Carbohydrate metabolism	
+K00874	kdgK	2-dehydro-3-deoxygluconokinase	___-	Pentose phosphate pathway	Carbohydrate metabolism	
+K00852	rbsK	ribokinase	___+	Pentose phosphate pathway	Carbohydrate metabolism	
+K01807	rpiA	ribose 5-phosphate isomerase A	___+	Pentose phosphate pathway	Carbohydrate metabolism	
+K01647	CS	citrate synthase	-__-	Citrate cycle (TCA cycle)	Carbohydrate metabolism	
+K00241	sdhC	succinate dehydrogenase cytochrome b subunit	++__	Citrate cycle (TCA cycle)	Carbohydrate metabolism	
+K01676	E4.2.1.2A	"fumarate hydratase, class I"	++__	Citrate cycle (TCA cycle)	Carbohydrate metabolism	
+K00240	sdhB	succinate dehydrogenase iron-sulfur subunit	_+__	Citrate cycle (TCA cycle)	Carbohydrate metabolism	
+K00175	korB	2-oxoglutarate/2-oxoacid ferredoxin oxidoreductase subunit beta	_++_	Citrate cycle (TCA cycle)	Carbohydrate metabolism	
+K00031	IDH1	isocitrate dehydrogenase	___-	Citrate cycle (TCA cycle)	Carbohydrate metabolism	
+K00705	malQ	4-alpha-glucanotransferase	-___	Starch and sucrose metabolism	Carbohydrate metabolism	
+K16153	NA	glycogen phosphorylase/synthase	__+_	Starch and sucrose metabolism	Carbohydrate metabolism	
+K16147	glgE	starch synthase (maltosyl-transferring)	_--_	Starch and sucrose metabolism	Carbohydrate metabolism	
+K00690	E2.4.1.7	sucrose phosphorylase	_--_	Starch and sucrose metabolism	Carbohydrate metabolism	
+K00691	mapA	maltose phosphorylase	_-_+	Starch and sucrose metabolism	Carbohydrate metabolism	
+K00971	manC	mannose-1-phosphate guanylyltransferase	_+_-	Fructose and mannose metabolism	Carbohydrate metabolism	
+K01809	manA	mannose-6-phosphate isomerase	_+__	Fructose and mannose metabolism	Carbohydrate metabolism	
+K01840	manB	phosphomannomutase	__+_	Fructose and mannose metabolism	Carbohydrate metabolism	
+K05305	FUK	fucokinase	___+	Fructose and mannose metabolism	Carbohydrate metabolism	
+K01818	fucI	L-fucose/D-arabinose isomerase	___+	Fructose and mannose metabolism	Carbohydrate metabolism	
+K00849	galK	galactokinase	----	Galactose metabolism	Carbohydrate metabolism	
+K12308	bgaB	beta-galactosidase	_-__	Galactose metabolism	Carbohydrate metabolism	
+K00917	lacC	tagatose 6-phosphate kinase	__++	Galactose metabolism	Carbohydrate metabolism	
+K07406	melA	alpha-galactosidase	___+	Galactose metabolism	Carbohydrate metabolism	
+K08302	gatY-kbaY	"tagatose 1,6-diphosphate aldolase GatY/KbaY"	+__+	Galactose metabolism	Carbohydrate metabolism	
+K02775	gatC	galactitol PTS system EIIC component	___-	Galactose metabolism	Carbohydrate metabolism	
+K07106	murQ	N-acetylmuramic acid 6-phosphate etherase	+___	Amino sugar and nucleotide sugar metabolism	Carbohydrate metabolism	
+K02564	nagB	glucosamine-6-phosphate deaminase	_+__	Amino sugar and nucleotide sugar metabolism	Carbohydrate metabolism	
+K12452	ascC	"CDP-4-dehydro-6-deoxyglucose reductase, E1"	_-__	Amino sugar and nucleotide sugar metabolism	Carbohydrate metabolism	
+K00972	UAP1	UDP-N-acetylglucosamine/UDP-N-acetylgalactosamine diphosphorylase	_---	Amino sugar and nucleotide sugar metabolism	Carbohydrate metabolism	
+K18431	legF	"CMP-N,N'-diacetyllegionaminic acid synthase"	__-_	Amino sugar and nucleotide sugar metabolism	Carbohydrate metabolism	
+K15856	rmd	GDP-4-dehydro-6-deoxy-D-mannose reductase	_---	Amino sugar and nucleotide sugar metabolism	Carbohydrate metabolism	
+K02822	ulaB	ascorbate PTS system EIIB component	+_++	Ascorbate and aldarate metabolism	Carbohydrate metabolism	
+K03475	ulaA	ascorbate PTS system EIIC component	+_++	Ascorbate and aldarate metabolism	Carbohydrate metabolism	
+K03476	ulaG	L-ascorbate 6-phosphate lactonase	+__+	Ascorbate and aldarate metabolism	Carbohydrate metabolism	
+K18120	4hbD	4-hydroxybutyrate dehydrogenase	___+	Butanoate metabolism	Carbohydrate metabolism	
+K01040	gctB	"glutaconate CoA-transferase, subunit B"	___+	Butanoate metabolism	Carbohydrate metabolism	
+K01039	gctA	"glutaconate CoA-transferase, subunit A"	___+	Butanoate metabolism	Carbohydrate metabolism	
+K14534	abfD	4-hydroxybutyryl-CoA dehydratase / vinylacetyl-CoA-Delta-isomerase	___+	Butanoate metabolism	Carbohydrate metabolism	
+K01026	pct	propionate CoA-transferase	___+	Propanoate metabolism	Carbohydrate metabolism	
+K13920	pduE	propanediol dehydratase small subunit	__++	Propanoate metabolism	Carbohydrate metabolism	
+K01661	menB	naphthoate synthase	_+__	Ubiquinone and other terpenoid-quinone biosynthesis	Biosynthesis of vitamins	
+K02551	menD	2-succinyl-5-enolpyruvyl-6-hydroxy-3-cyclohexene-1-carboxylate synthase	_+__	Ubiquinone and other terpenoid-quinone biosynthesis	Biosynthesis of vitamins	
+K03183	ubiE	"demethylmenaquinone methyltransferase / 2-methoxy-6-polyprenyl-1,4-benzoquinol methylase"	++__	Ubiquinone and other terpenoid-quinone biosynthesis	Biosynthesis of vitamins	
+K02361	entC	isochorismate synthase	_+__	Ubiquinone and other terpenoid-quinone biosynthesis	Biosynthesis of vitamins	
+K01911	menE	o-succinylbenzoate---CoA ligase	_+__	Ubiquinone and other terpenoid-quinone biosynthesis	Biosynthesis of vitamins	
+K18285	mqnE	aminodeoxyfutalosine synthase	__+_	Ubiquinone and other terpenoid-quinone biosynthesis	Biosynthesis of vitamins	
+K11782	mqnA	chorismate dehydratase	__+_	Ubiquinone and other terpenoid-quinone biosynthesis	Biosynthesis of vitamins	
+K11784	mqnC	cyclic dehypoxanthinyl futalosine synthase	__+_	Ubiquinone and other terpenoid-quinone biosynthesis	Biosynthesis of vitamins	
+K19267	qorB	NAD(P)H dehydrogenase (quinone)	++++	Ubiquinone and other terpenoid-quinone biosynthesis	Biosynthesis of vitamins	
+K03186	ubiX	flavin prenyltransferase	___+	Ubiquinone and other terpenoid-quinone biosynthesis	Biosynthesis of vitamins	
+K00950	folK	2-amino-4-hydroxy-6-hydroxymethyldihydropteridine diphosphokinase	+___	Folate biosynthesis	Biosynthesis of vitamins	
+K01633	folB	"7,8-dihydroneopterin aldolase/epimerase/oxygenase"	+++_	Folate biosynthesis	Biosynthesis of vitamins	
+K01665	pabB	para-aminobenzoate synthetase component I	_++_	Folate biosynthesis	Biosynthesis of vitamins	
+K06920	queC	7-cyano-7-deazaguanine synthase	___-	Queuosine biosynthesis	Biosynthesis of vitamins	
+K09457	queF	7-cyano-7-deazaguanine reductase	___-	Queuosine biosynthesis	Biosynthesis of vitamins	
+K02226	cobC	alpha-ribazole phosphatase	_-__	Cobalamin biosynthesis	Biosynthesis of vitamins	
+K00595	cobL-cbiET	"precorrin-6B C5,15-methyltransferase / cobalt-precorrin-6B C5,C15-methyltransferase"	---_	Cobalamin biosynthesis	Biosynthesis of vitamins	
+K02302	cysG	uroporphyrin-III C-methyltransferase / precorrin-2 dehydrogenase / sirohydrochlorin ferrochelatase	___-	Cobalamin biosynthesis	Biosynthesis of vitamins	
+K05934	cobJ	precorrin-3B C17-methyltransferase / cobalt-factor III methyltransferase	___-	Cobalamin biosynthesis	Biosynthesis of vitamins	
+K02422	fliS	flagellar secretion chaperone FliS	__--	Flagellar assembly	Cellular Processes	
+K02406	fliC	flagellin	_---	Flagellar assembly	Cellular Processes	
+K02396	flgK	flagellar hook-associated protein 1	_---	Flagellar assembly	Cellular Processes	
+K02392	flgG	flagellar basal-body rod protein FlgG	_---	Flagellar assembly	Cellular Processes	
+K02400	flhA	flagellar biosynthesis protein FlhA	_-_-	Flagellar assembly	Cellular Processes	
+K02413	fliJ	flagellar protein FliJ	_-_-	Flagellar assembly	Cellular Processes	
+K02398	flgM	negative regulator of flagellin synthesis FlgM	_-_-	Flagellar assembly	Cellular Processes	
+K02409	fliF	flagellar M-ring protein FliF	_-_-	Flagellar assembly	Cellular Processes	
+K02397	flgL	flagellar hook-associated protein 3 FlgL	___-	Flagellar assembly	Cellular Processes	
+K02408	fliE	flagellar hook-basal body complex protein FliE	_-_-	Flagellar assembly	Cellular Processes	
+K02388	flgC	flagellar basal-body rod protein FlgC	_-_-	Flagellar assembly	Cellular Processes	
+K02418	fliO	flagellar protein FliO/FliZ	_-_-	Flagellar assembly	Cellular Processes	
+K02407	fliD	flagellar hook-associated protein 2	___-	Flagellar assembly	Cellular Processes	
+K02389	flgD	flagellar basal-body rod modification protein FlgD	_-_-	Flagellar assembly	Cellular Processes	
+K02419	fliP	flagellar biosynthesis protein FliP	_-_-	Flagellar assembly	Cellular Processes	
+K02390	flgE	flagellar hook protein FlgE	_-_-	Flagellar assembly	Cellular Processes	
+K02410	fliG	flagellar motor switch protein FliG	_-_-	Flagellar assembly	Cellular Processes	
+K02405	fliA	RNA polymerase sigma factor FliA	_-_-	Flagellar assembly	Cellular Processes	
+K02412	fliI	flagellum-specific ATP synthase	_-_-	Flagellar assembly	Cellular Processes	
+K02387	flgB	flagellar basal-body rod protein FlgB	_-_-	Flagellar assembly	Cellular Processes	
+K02411	fliH	flagellar assembly protein FliH	_-_-	Flagellar assembly	Cellular Processes	
+K02420	fliQ	flagellar biosynthesis protein FliQ	_-_-	Flagellar assembly	Cellular Processes	
+K02416	fliM	flagellar motor switch protein FliM	_-_-	Flagellar assembly	Cellular Processes	
+K03409	cheX	chemotaxis protein CheX	----	Bacterial chemotaxis	Cellular Processes	
+K03406	mcp	methyl-accepting chemotaxis protein	_---	Bacterial chemotaxis	Cellular Processes	
+K03408	cheW	purine-binding chemotaxis protein CheW	_---	Bacterial chemotaxis	Cellular Processes	
+K03410	cheC	chemotaxis protein CheC	_---	Bacterial chemotaxis	Cellular Processes	
+K03411	cheD	chemotaxis protein CheD	_-_-	Bacterial chemotaxis	Cellular Processes	
+K03413	cheY	"two-component system, chemotaxis family, chemotaxis protein CheY"	_-_-	Bacterial chemotaxis	Cellular Processes	
+K03415	cheV	"two-component system, chemotaxis family, chemotaxis protein CheV"	___-	Bacterial chemotaxis	Cellular Processes	
+K02556	motA	chemotaxis protein MotA	_-_-	Bacterial chemotaxis	Cellular Processes	
+K03412	cheB	"two-component system, chemotaxis family, protein-glutamate methylesterase/glutaminase"	_-_-	Bacterial chemotaxis	Cellular Processes	
+K03407	cheA	"two-component system, chemotaxis family, sensor kinase CheA"	_-_-	Bacterial chemotaxis	Cellular Processes	
+K08321	lsrF	"3-hydroxy-5-phosphonooxypentane-2,4-dione thiolase"	++++	Quorum sensing	Cellular Processes	
+K07813	agrB	accessory gene regulator B	__-_	Quorum sensing	Cellular Processes	
+K20265	gadC	glutamate:GABA antiporter	___+	Quorum sensing	Cellular Processes	
+K03666	hfq	host factor-I protein	+__+	Quorum sensing	Cellular Processes	
+K07173	luxS	S-ribosylhomocysteine lyase	___-	Quorum sensing	Cellular Processes	
+K11752	ribD	diaminohydroxyphosphoribosylaminopyrimidine deaminase / 5-amino-6-(5-phosphoribosylamino)uracil reductase	___-	Quorum sensing	Cellular Processes	
+K03092	rpoN	RNA polymerase sigma-54 factor	_+__	Biofilm formation	Cellular Processes	
+K03563	csrA	carbon storage regulator	_---	Biofilm formation	Cellular Processes	
+K21012	pelG	polysaccharide biosynthesis protein PelG	---_	Biofilm formation	Cellular Processes	
+K21011	pelF	polysaccharide biosynthesis protein PelF	--__	Biofilm formation	Cellular Processes	
+K01729	algL	poly(beta-D-mannuronate) lyase	_+++	Biofilm formation	Cellular Processes	
+K03590	ftsA	cell division protein FtsA	++__	Cell cycle - Caulobacter	Cellular Processes	
+K03544	clpX	ATP-dependent Clp protease ATP-binding subunit ClpX	__-_	Cell cycle - Caulobacter	Cellular Processes	
+K01358	clpP	"ATP-dependent Clp protease, protease subunit"	___+	Cell cycle - Caulobacter	Cellular Processes	
+K03589	ftsQ	cell division protein FtsQ	___-	Cell cycle - Caulobacter	Cellular Processes	
+K03781	katE	catalase	_++_	Peroxisome	Cellular Processes	
+K00803	AGPS	alkyldihydroxyacetonephosphate synthase	+__+	Peroxisome	Cellular Processes	
+K03760	eptA	lipid A ethanolaminephosphotransferase	+_++	Lipopolysaccharide biosynthesis	Glycan biosynthesis and metabolism	
+K00748	lpxB	lipid-A-disaccharide synthase	++__	Lipopolysaccharide biosynthesis	Glycan biosynthesis and metabolism	
+K02536	lpxD	UDP-3-O-[3-hydroxymyristoyl] glucosamine N-acyltransferase	++__	Lipopolysaccharide biosynthesis	Glycan biosynthesis and metabolism	
+K02843	waaF	lipopolysaccharide heptosyltransferase II	+++_	Lipopolysaccharide biosynthesis	Glycan biosynthesis and metabolism	
+K06041	kdsD	arabinose-5-phosphate isomerase	++__	Lipopolysaccharide biosynthesis	Glycan biosynthesis and metabolism	
+K01627	kdsA	2-dehydro-3-deoxyphosphooctonate aldolase (KDO 8-P synthase)	++__	Lipopolysaccharide biosynthesis	Glycan biosynthesis and metabolism	
+K03270	kdsC	3-deoxy-D-manno-octulosonate 8-phosphate phosphatase (KDO 8-P phosphatase)	++__	Lipopolysaccharide biosynthesis	Glycan biosynthesis and metabolism	
+K03269	lpxH	"UDP-2,3-diacylglucosamine hydrolase"	++__	Lipopolysaccharide biosynthesis	Glycan biosynthesis and metabolism	
+K00979	kdsB	3-deoxy-manno-octulosonate cytidylyltransferase (CMP-KDO synthetase)	+___	Lipopolysaccharide biosynthesis	Glycan biosynthesis and metabolism	
+K00912	lpxK	tetraacyldisaccharide 4'-kinase	_+__	Lipopolysaccharide biosynthesis	Glycan biosynthesis and metabolism	
+K02517	lpxL	Kdo2-lipid IVA lauroyltransferase/acyltransferase	_+__	Lipopolysaccharide biosynthesis	Glycan biosynthesis and metabolism	
+K13018	wbpD	"UDP-2-acetamido-3-amino-2,3-dideoxy-glucuronate N-acetyltransferase"	__++	O-Antigen nucleotide sugar biosynthesis	Glycan biosynthesis and metabolism	
+K19068	wbjC	"UDP-2-acetamido-2,6-beta-L-arabino-hexul-4-ose reductase"	___+	O-Antigen nucleotide sugar biosynthesis	Glycan biosynthesis and metabolism	
+K17716	capD	UDP-glucose 4-epimerase	___+	O-Antigen nucleotide sugar biosynthesis	Glycan biosynthesis and metabolism	
+K05879	dhaL	phosphoenolpyruvate---glycerone phosphotransferase subunit DhaL	++++	Glycerolipid metabolism	Lipid metabolism	
+K05878	dhaK	phosphoenolpyruvate---glycerone phosphotransferase subunit DhaK	_+++	Glycerolipid metabolism	Lipid metabolism	
+K00864	glpK	glycerol kinase	___+	Glycerolipid metabolism	Lipid metabolism	
+K01613	psd	phosphatidylserine decarboxylase	_+__	Glycerophospholipid metabolism	Lipid metabolism	
+K17103	CHO1	CDP-diacylglycerol---serine O-phosphatidyltransferase	_+__	Glycerophospholipid metabolism	Lipid metabolism	
+K00980	tagD	glycerol-3-phosphate cytidylyltransferase	___+	Glycerophospholipid metabolism	Lipid metabolism	
+K02065	mlaF	phospholipid/cholesterol/gamma-HCH transport system ATP-binding protein	_+__	ABC transporters	Environmental Information Processing	phospholipid
+K02066	mlaE	phospholipid/cholesterol/gamma-HCH transport system permease protein	++__	ABC transporters	Environmental Information Processing	phospholipid
+K02067	mlaD	phospholipid/cholesterol/gamma-HCH transport system substrate-binding protein	+++_	ABC transporters	Environmental Information Processing	phospholipid
+K06861	lptB	lipopolysaccharide export system ATP-binding protein	++__	ABC transporters	Environmental Information Processing	lipopolysaccharide
+K07091	lptF	lipopolysaccharide export system permease protein	+_+_	ABC transporters	Environmental Information Processing	lipopolysaccharide
+K11720	lptG	lipopolysaccharide export system permease protein	++__	ABC transporters	Environmental Information Processing	lipopolysaccharide
+K09808	lolC_E	lipoprotein-releasing system permease protein	++__	ABC transporters	Environmental Information Processing	Lipoprotein
+K09810	lolD	lipoprotein-releasing system ATP-binding protein	_+__	ABC transporters	Environmental Information Processing	Lipoprotein
+K16785	ecfT	energy-coupling factor transport system permease protein	--_+	ABC transporters	Environmental Information Processing	vitamin B7
+K16786	ecfA1	energy-coupling factor transport system ATP-binding protein	--_+	ABC transporters	Environmental Information Processing	vitamin B7
+K16787	ecfA2	energy-coupling factor transport system ATP-binding protein	--_+	ABC transporters	Environmental Information Processing	vitamin B7
+K03523	bioY	biotin transport system substrate-specific component	__-_	ABC transporters	Environmental Information Processing	vitamin B7
+K05813	ugpB	sn-glycerol 3-phosphate transport system substrate-binding protein	+__+	ABC transporters	Environmental Information Processing	sn-glycerol 3-phosphate
+K05815	ugpE	sn-glycerol 3-phosphate transport system permease protein	++__	ABC transporters	Environmental Information Processing	sn-glycerol 3-phosphate
+K05845	opuC	osmoprotectant transport system substrate-binding protein	_+++	ABC transporters	Environmental Information Processing	osmoprotectant
+K05846	opuBD	osmoprotectant transport system permease protein	__++	ABC transporters	Environmental Information Processing	osmoprotectant
+K05847	opuA	osmoprotectant transport system ATP-binding protein	__++	ABC transporters	Environmental Information Processing	osmoprotectant
+K10559	rhaS	rhamnose transport system substrate-binding protein	++_+	ABC transporters	Environmental Information Processing	rhammose
+K10560	rhaP	rhamnose transport system permease protein	___+	ABC transporters	Environmental Information Processing	rhammose
+K10562	rhaT	rhamnose transport system ATP-binding protein	___+	ABC transporters	Environmental Information Processing	rhammose
+K10117	msmE	raffinose/stachyose/melibiose transport system substrate-binding protein	--__	ABC transporters	Environmental Information Processing	Raffinose/Stachyose/Melibiose
+K10119	msmG	raffinose/stachyose/melibiose transport system permease protein	--__	ABC transporters	Environmental Information Processing	Raffinose/Stachyose/Melibiose
+K15770	cycB	arabinogalactan oligomer / maltooligosaccharide transport system substrate-binding protein	_--_	ABC transporters	Environmental Information Processing	galactose oligomer/maltooligosaccharide
+K15771	ganP	arabinogalactan oligomer / maltooligosaccharide transport system permease protein	_--_	ABC transporters	Environmental Information Processing	galactose oligomer/maltooligosaccharide
+K17318	lplA	putative aldouronate transport system substrate-binding protein	---_	ABC transporters	Environmental Information Processing	"Aldouronate,醛脲酸"
+K17319	lplB	putative aldouronate transport system permease protein	---_	ABC transporters	Environmental Information Processing	"Aldouronate,醛脲酸"
+K17320	lplC	putative aldouronate transport system permease protein	_--_	ABC transporters	Environmental Information Processing	"Aldouronate,醛脲酸"
+K02747	agaE	N-acetylgalactosamine PTS system EIID component	+__+	Phosphotransferase system (PTS)	Environmental Information Processing	Galactose metabolism
+K02746	agaW	N-acetylgalactosamine PTS system EIIC component	+__+	Phosphotransferase system (PTS)	Environmental Information Processing	Galactose metabolism
+K02745	agaV	N-acetylgalactosamine PTS system EIIB component	+__+	Phosphotransferase system (PTS)	Environmental Information Processing	Galactose metabolism
+K02082	agaS	D-galactosamine 6-phosphate deaminase/isomerase	___+	Phosphotransferase system (PTS)	Environmental Information Processing	Galactose metabolism
+K19508	gfrC	fructoselysine/glucoselysine PTS system EIIC component	___+	Phosphotransferase system (PTS)	Environmental Information Processing	
+K19507	gfrB	fructoselysine/glucoselysine PTS system EIIB component	__++	Phosphotransferase system (PTS)	Environmental Information Processing	
+K19509	gfrD	fructoselysine/glucoselysine PTS system EIID component	+_++	Phosphotransferase system (PTS)	Environmental Information Processing	
+K00339	nuoJ	NADH-quinone oxidoreductase subunit J	_+__	Oxidative phosphorylation	Energy metabolism	
+K00338	nuoI	NADH-quinone oxidoreductase subunit I	_+__	Oxidative phosphorylation	Energy metabolism	
+K00331	nuoB	NADH-quinone oxidoreductase subunit B	_+__	Oxidative phosphorylation	Energy metabolism	
+K00340	nuoK	NADH-quinone oxidoreductase subunit K	_+__	Oxidative phosphorylation	Energy metabolism	
+K00335	nuoF	NADH-quinone oxidoreductase subunit F	__++	Oxidative phosphorylation	Energy metabolism	
+K02124	ATPVK	V/A-type H+/Na+-transporting ATPase subunit K	__++	Oxidative phosphorylation	Energy metabolism	
+K02120	ATPVD	V/A-type H+/Na+-transporting ATPase subunit D	__++	Oxidative phosphorylation	Energy metabolism	
+K00334	nuoE	NADH-quinone oxidoreductase subunit E	__++	Oxidative phosphorylation	Energy metabolism	
+K02121	ATPVE	V/A-type H+/Na+-transporting ATPase subunit E	__++	Oxidative phosphorylation	Energy metabolism	
+K02118	ATPVB	V/A-type H+/Na+-transporting ATPase subunit B	__++	Oxidative phosphorylation	Energy metabolism	
+K02123	ATPVI	V/A-type H+/Na+-transporting ATPase subunit I	__++	Oxidative phosphorylation	Energy metabolism	
+K02119	ATPVC	V/A-type H+/Na+-transporting ATPase subunit C	___+	Oxidative phosphorylation	Energy metabolism	
+K02122	ATPVF	V/A-type H+/Na+-transporting ATPase subunit F	___+	Oxidative phosphorylation	Energy metabolism	
+K02117	ATPVA	V/A-type H+/Na+-transporting ATPase subunit A	__++	Oxidative phosphorylation	Energy metabolism	
+K01507	ppa	inorganic pyrophosphatase	___+	Oxidative phosphorylation	Energy metabolism	
+K02112	ATPF1B	F-type H+/Na+-transporting ATPase subunit beta	__--	Photosynthesis	Energy metabolism	
+K02110	ATPF0C	F-type H+-transporting ATPase subunit c	__-_	Photosynthesis	Energy metabolism	
+K02115	ATPF1G	F-type H+-transporting ATPase subunit gamma	__--	Photosynthesis	Energy metabolism	
+K02109	ATPF0B	F-type H+-transporting ATPase subunit b	__--	Photosynthesis	Energy metabolism	
+K02114	ATPF1E	F-type H+-transporting ATPase subunit epsilon	__--	Photosynthesis	Energy metabolism	
+K02108	ATPF0A	F-type H+-transporting ATPase subunit a	__--	Photosynthesis	Energy metabolism	
+K02113	ATPF1D	F-type H+-transporting ATPase subunit delta	___-	Photosynthesis	Energy metabolism	
+K02046	cysU	sulfate/thiosulfate transport system permease protein	_---	Sulfur metabolism-cysFamily	Energy metabolism	
+K02045	cysA	sulfate/thiosulfate transport system ATP-binding protein	_---	Sulfur metabolism-cysFamily	Energy metabolism	
+K02048	cysP	sulfate/thiosulfate transport system substrate-binding protein	___-	Sulfur metabolism-cysFamily	Energy metabolism	
+K02047	cysW	sulfate/thiosulfate transport system permease protein	_-_-	Sulfur metabolism-cysFamily	Energy metabolism	
+K00394	aprA	"adenylylsulfate reductase, subunit A"	_---	Sulfur metabolism-aprFamily	Energy metabolism	
+K00395	aprB	"adenylylsulfate reductase, subunit B"	_---	Sulfur metabolism-aprFamily	Energy metabolism	
+K00385	asrC	anaerobic sulfite reductase subunit C	++++	Sulfur metabolism-asrFamily	Energy metabolism	
+K16951	asrB	anaerobic sulfite reductase subunit B	_+++	Sulfur metabolism-asrFamily	Energy metabolism	
+K16950	asrA	anaerobic sulfite reductase subunit A	_+++	Sulfur metabolism-asrFamily	Energy metabolism	
+K03388	hdrA2	heterodisulfide reductase subunit A2	+_++	Methanogenesis	Energy metabolism	
+K03389	hdrB2	heterodisulfide reductase subunit B2	+_++	Methanogenesis	Energy metabolism	
+K03390	hdrC2	heterodisulfide reductase subunit C2	+_++	Methanogenesis	Energy metabolism	
+K00194	cdhD	"acetyl-CoA decarbonylase/synthase, CODH/ACS complex subunit delta"	___+	Acetyl_CoA pathway	Energy metabolism	
+K00196	cooF	anaerobic carbon-monoxide dehydrogenase iron sulfur subunit	__++	Acetyl_CoA pathway	Energy metabolism	
+K00197	cdhE	"acetyl-CoA decarbonylase/synthase, CODH/ACS complex subunit gamma"	___+	Acetyl_CoA pathway	Energy metabolism	
+K03385	nrfA	nitrite reductase (cytochrome c-552)	__+_	Nitrogen metabolism	Energy metabolism	
+K02588	nifH	nitrogenase iron protein NifH	___+	Nitrogen metabolism	Energy metabolism	
+K02566	nagD	5'-nucleotidase	+__+	Purine metabolism	Nucleotide metabolism	
+K00602	purH	phosphoribosylaminoimidazolecarboxamide formyltransferase / IMP cyclohydrolase	_+__	Purine metabolism	Nucleotide metabolism	
+K01588	purE	5-(carboxyamino)imidazole ribonucleotide mutase	_+__	Purine metabolism	Nucleotide metabolism	
+K01081	E3.1.3.5	5'-nucleotidase	_+__	Purine metabolism	Nucleotide metabolism	
+K05810	LACC1	purine-nucleoside/S-methyl-5'-thioadenosine phosphorylase / adenosine deaminase	_+__	Purine metabolism	Nucleotide metabolism	
+K03787	surE	5'/3'-nucleotidase	_+__	Purine metabolism	Nucleotide metabolism	
+K07127	uraH	5-hydroxyisourate hydrolase	_++_	Purine metabolism	Nucleotide metabolism	
+K13479	ygeT	xanthine dehydrogenase FAD-binding subunit	__++	Purine metabolism	Nucleotide metabolism	
+K01487	guaD	guanine deaminase	__++	Purine metabolism	Nucleotide metabolism	
+K09769	ymdB	"2',3'-cyclic-nucleotide 2'-phosphodiesterase"	___+	Purine metabolism	Nucleotide metabolism	
+K01951	guaA	GMP synthase (glutamine-hydrolysing)	___+	Purine metabolism	Nucleotide metabolism	
+K00087	ygeS	xanthine dehydrogenase molybdenum-binding subunit	___+	Purine metabolism	Nucleotide metabolism	
+K01239	E3.2.2.1	purine nucleosidase	___+	Purine metabolism	Nucleotide metabolism	
+K00254	DHODH	dihydroorotate dehydrogenase	_++_	Pyrimidine metabolism	Nucleotide metabolism	
+K01520	dut	dUTP pyrophosphatase	_+__	Pyrimidine metabolism	Nucleotide metabolism	
+K01464	DPYS	dihydropyrimidinase	___+	Pyrimidine metabolism	Nucleotide metabolism	
+K16329	psuG	pseudouridylate synthase	__++	Pyrimidine metabolism	Nucleotide metabolism	
+K05592	deaD	ATP-dependent RNA helicase DeaD	___-	RNA degradation	Genetic Information Processing	
+K12573	rnr	ribonuclease R	___-	RNA degradation	Genetic Information Processing	
+K03654	recQ	ATP-dependent DNA helicase RecQ	___-	RNA degradation	Genetic Information Processing	
+K02433	gatA	aspartyl-tRNA(Asn)/glutamyl-tRNA(Gln) amidotransferase subunit A	__-_	Aminoacyl-tRNA biosynthesis	Genetic Information Processing	
+K02435	gatC	aspartyl-tRNA(Asn)/glutamyl-tRNA(Gln) amidotransferase subunit C	__-_	Aminoacyl-tRNA biosynthesis	Genetic Information Processing	
+K02954	RP-S14	small subunit ribosomal protein S14	++_+	Ribosome	Genetic Information Processing	
+K02992	RP-S7	small subunit ribosomal protein S7	___+	Ribosome	Genetic Information Processing	
+K02970	RP-S21	small subunit ribosomal protein S21	___+	Ribosome	Genetic Information Processing	
+K02916	RP-L35	large subunit ribosomal protein L35	___+	Ribosome	Genetic Information Processing	
+K02342	dnaQ	DNA polymerase III subunit epsilon	+___	DNA replication	Genetic Information Processing	
+K01972	E6.5.1.2	DNA ligase (NAD+)	___+	DNA replication	Genetic Information Processing	
+K01142	E3.1.11.2	exodeoxyribonuclease III	_+_+	Base excision repair	Genetic Information Processing	
+K01151	nfo	deoxyribonuclease IV	_-__	Base excision repair	Genetic Information Processing	
+K03660	OGG1	N-glycosylase/DNA lyase	_--_	Base excision repair	Genetic Information Processing	
+K10773	NTH	endonuclease III	___+	Base excision repair	Genetic Information Processing	
+K04487	iscS	cysteine desulfurase	_--_	Sulfur relay system	Genetic Information Processing	
+K03154	thiS	sulfur carrier protein	___-	Sulfur relay system	Genetic Information Processing	
+K21140	mec	[CysO sulfur-carrier protein]-S-L-cysteine hydrolase	_-_-	Sulfur relay system	Genetic Information Processing	
+K21028	ynjE	molybdopterin synthase sulfurtransferase	__++	Sulfur relay system	Genetic Information Processing	
+K18344	vanRB	"two-component system, OmpR family, response regulator VanR"	_-_+	Vancomycin resistance	Vancomycin resistance	
+K18345	vanSB	"two-component system, OmpR family, sensor histidine kinase VanS"	_-_+	Vancomycin resistance	Vancomycin resistance	
+K18350	vanSC	"two-component system, OmpR family, sensor histidine kinase VanS"	___+	Vancomycin resistance	Vancomycin resistance	
+K18346	vanW	vancomycin resistance protein VanW	___+	Vancomycin resistance	Vancomycin resistance	
