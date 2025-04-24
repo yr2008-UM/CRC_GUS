@@ -1,5 +1,6 @@
 # Pipeline used for loop classification based on the following criteria:</br>
-<img width="1047" alt="image" src="https://github.com/user-attachments/assets/df9422a1-342c-4157-8877-d8c176ed60b4" />
+<img width="1183" alt="image" src="https://github.com/user-attachments/assets/9b106a94-40a1-4c83-b687-f792a5c23afe" />
+
 
 ## Repo Contents
 * [testInput](testInput/): Sample input files for testing and demonstration.
