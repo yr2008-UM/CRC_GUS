@@ -2,7 +2,7 @@
 #
 ## Rarefaction curves
 ## Barplot for 114 references and 550 gmGUSs
-## Author: JR C
+## Author: 
 ## Date: 01.01.2025
 #
 # ######################################################################

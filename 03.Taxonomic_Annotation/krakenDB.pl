@@ -1,4 +1,4 @@
-#Author: JR C
+#Author: 
 #Date: 2025.01.01
 
 use strict;

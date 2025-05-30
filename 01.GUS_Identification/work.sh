@@ -3,6 +3,7 @@ blastp -query testInput/InputGeneCatalogue.prot.fa -db resource/references -eval
 hmmsearch --tblout 02.hmm.result.tblout --domtblout 02.hmm.result.domtblout --pfamtblout 02.hmm.result.pfamtblout -o 02.hmm.result.xls -E 0.05 --cpu 4 resource/domains.hmm testInput/InputGeneCatalogue.prot.fa
 
 # step2, screening based on results from blastp and hmmsearch
+perl -ne 'my@or=split/\s+/;print if $or[2] > 25 & $or[10] < 0.05 & !$check{$or[0]};$check{$or[0]}=1;' 01.blastp.result.xls > 01.blastp.result.screen.xls
 perl -ne 'BEGIN{$/="\n>";for my $l  (`less testInput/InputGeneCatalogue.prot.fa`){chomp$l;$l=~s/^>//;my $id=$1 if $l=~/^(\S+)/;$seq{$id}=$l;}$/="\n";for my $l (`less 01.blastp.result.screen.xls`){my@or=split/\s+/,$l;$check{$or[0]}=1;}}next if $_=~/^#/;my@or=split/\s+/;$hash{$or[0]}{$or[2]}=1 if $or[4] < 0.05;END{foreach my $id (sort keys %hash){print ">$seq{$id}\n" if $hash{$id}{"Glyco_hydro_2_C"} && $hash{$id}{"Glyco_hydro_2_N"} && $hash{$id}{"Glyco_hydro_2"} && $check{$id} }}' 02.hmm.result.tblout > 03.1.hmm.and.blast.screen.fa
 
 # step3, screening based on motifs

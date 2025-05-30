@@ -1,7 +1,7 @@
 # ######################################################################
 #
 ## enzyme assay + cell experiment + RNAseq (Figure 6)
-## Author: JR C
+## Author: 
 ## Date: 01.01.2025
 #
 # ######################################################################
@@ -17,25 +17,29 @@ library(Rmisc)
 library(ggprism)
 
 ##### enzyme assay #####
-data <- read_xlsx("./00.rawdata/in vitro/17GUSformat.xlsx",sheet = 1,col_names = T) %>% as.data.frame() 
-data <- data %>% dplyr::mutate(Dot1=(((Dot1/100)*300)/CC)/(Time/60),Dot2=(((Dot2/100)*300)/CC)/(Time/60),Dot3=(((Dot3/100)*300)/CC)/(Time/60)) %>% dplyr::select(-Time,-CC) %>% reshape2::melt(by='GUS') %>% summarySE( measurevar="value", groupvars=c("GUS","Sub"))
-orderGUS <- (data %>% dplyr::group_by(GUS) %>% dplyr::summarise(value=mean(value)) %>% dplyr::arrange(desc(value)))$GUS
+data <- read_xlsx("./00.rawdata/InVitro/17GUSformat.xlsx",sheet = 1,col_names = T) %>% as.data.frame() 
+data <- data %>% reshape2::melt(by='GUS') %>% summarySE( measurevar="value", groupvars=c("GUS","Sub"))
+orderGUS <- (data %>% dplyr::group_by(GUS) %>% dplyr::summarise(value=max(value)) %>% dplyr::arrange(desc(value)))$GUS
 data$GUS <- factor(as.vector(data$GUS),levels = orderGUS)
 ggplot(data, aes(x = GUS, y = (value), fill = Sub)) + 
   geom_bar(position=position_dodge(), stat="identity") +
   geom_errorbar(aes(ymin = (value), ymax = (value) + (se)),
                 width=.2, position=position_dodge(.9)) +
-  xlab("") + ylab("uM/h per uM GUS") +
+  xlab("") + ylab("nmol/mg protein/min") +
   theme_pubclean() + 
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) 
+ggsave("17GUS.barplot1.pdf",width = 6,height = 5)
 
 ggplot(data, aes(x = GUS, y = (value), fill = Sub)) + 
   geom_bar(position=position_dodge(), stat="identity") +
   geom_errorbar(aes(ymin = (value), ymax = (value) + (se)),
                 width=.2, position=position_dodge(.9)) +
-  xlab("") + ylab("uM/h per uM GUS") +
+  xlab("") + ylab("nmol/mg protein/min") +
   theme_pubclean() + 
-  theme(axis.text.x = element_text(angle = 45, hjust = 1)) + ylim(0,1600)
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) + ylim(0,250) # + ylim(0,1600)
+ggsave("17GUS.barplot2.pdf",width = 6,height = 5)
+
+thresholds <- quantile(data$value, probs = c(1/3, 2/3))
 
 data <- read_xlsx("./00.rawdata/in vitro/17GUSformat.xlsx",sheet = 2,col_names = T) %>% as.data.frame() %>% reshape2::melt(id=c('GUS','Sub','Time'))
 data$Time <- as.numeric(data$Time)
