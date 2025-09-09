@@ -79,8 +79,8 @@ The Random Forest classifier (script 06.RFmodel.R) includes:
 4. External validation in three independent cohorts (AUS, FRA, GER)
 
 To adapt the classifier to new datasets:</br>
-∙ Ensure your data follows the same format as GUSabun_TPM.csv(rows = features, columns = samples)</br>
-∙ Provide sample metadata in the same format as group.csv</br>
+∙ Ensure your data follows the same format as 00.rawdata/GUSabun_TPM.csv(rows = features, columns = samples)</br>
+∙ Provide sample metadata in the same format as 00.rawdata/group.csv</br>
 ∙ Modify the feature selection parameters if needed for your dataset</br>
 ∙ Replace the input files in the R script with your new dataset</br>
 ∙ Run each section individually</br>
