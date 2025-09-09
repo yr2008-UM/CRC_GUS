@@ -51,12 +51,7 @@ The R scripts requires only a standard computer with enough RAM to support the i
 The scripts have been tested on macOS system, but Linux is theoretically feasible as well.</br>
 * [R](https://cran.r-project.org) (version 4.3.2 or higher recommended)
 * Required R packages:</br>
-    vegan, dplyr, ggplot2, ggpubr, viridis, reshape2, ape</br>
-    VennDiagram, ggtree, treeio, pheatmap, psych, coin</br>
-    caret, pROC, Boruta, randomForest</br>
-    survival, survminer, glmnet, timeROC, readxl</br>
-    clusterProfiler, org.Hs.eg.db, grid, ggsci, ggsignif</br>
-    ggbreak, Rmisc, ggprism, EnhancedVolcano, tibble</br>
+    vegan, dplyr, ggplot2, ggpubr, viridis, reshape2, ape, VennDiagram, ggtree, treeio, pheatmap, psych, coin, caret, pROC, Boruta, randomForest, survival, survminer, glmnet, timeROC, readxl, clusterProfiler, org.Hs.eg.db, grid, ggsci, ggsignif, ggbreak, Rmisc, ggprism, EnhancedVolcano, tibble</br>
 * Please see each R script for its required R packages.
 
 ## Installation
@@ -83,13 +78,12 @@ The Random Forest classifier (script 06.RFmodel.R) includes:
 3. Model evaluation using ROC analysis and variable importance
 4. External validation in three independent cohorts (AUS, FRA, GER)
 
-To adapt the classifier to new datasets:
-∙ Ensure your data follows the same format as GUSabun_TPM.csv(rows = features, columns = samples)
-∙ Provide sample metadata in the same format as group.csv
-∙ Modify the feature selection parameters if needed for your dataset
+To adapt the classifier to new datasets:</br>
+∙ Ensure your data follows the same format as GUSabun_TPM.csv(rows = features, columns = samples)</br>
+∙ Provide sample metadata in the same format as group.csv</br>
+∙ Modify the feature selection parameters if needed for your dataset</br>
+∙ Replace the input files in the R script with your new dataset</br>
+∙ Run each section individually</br>
 
 ## Citation
 For usage of the tool, please cite the associated manuscript.
-
-## Support
-For questions regarding the code or reproducibility, please contact Junru Chen (junru.chen2019@hotmail.com).
