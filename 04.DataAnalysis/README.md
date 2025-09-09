@@ -3,25 +3,25 @@ Development of colorectal cancer (CRC) is accompanied by microbial and metabolic
 
 ## Repository Structure and Workflow
 This directory contains R scripts for reproducing all analyses and figures from the study. The scripts are organized in numerical order to facilitate sequential execution:
-* 01.rarefaction_barplot.R: 
+* 01.rarefaction_barplot.R: </br>
 Generates rarefaction curves for gmGUS diversity and bar plots for reference sequences and identified gmGUSs (Figure 1b, Supplementary Figures 1-2)
-* 02.LoopAnalysis.R: 
+* 02.LoopAnalysis.R: </br>
 Analyzes loop category distribution, abundance differences, and taxonomic composition (Figure 2a-c, Supplementary Figure 3)
-* 03.DiversityAnalysis.R: 
+* 03.DiversityAnalysis.R: </br>
 Performs beta-diversity analysis (PCoA) and compares alpha diversity metrics across CRC stages (Figure 2d-e)
-* 04.speciesAnalysis.R: 
+* 04.speciesAnalysis.R: </br>
 Analyzes species-level cumulative GUS abundance/number and copy number variation (CNV) (Figure 2f-h, Supplementary Figure 4)
-* 05.GUSanalysis.R: 
+* 05.GUSanalysis.R: </br>
 Performs differential abundance analysis of gmGUSs across CRC stages and validation in independent cohorts (Figure 3a, Supplementary Figures 5, 7b)
-* 06.RFmodel.R: 
+* 06.RFmodel.R: </br>
 Implements Random Forest classifiers for CRC/adenoma classification with feature selection and validation (Figure 3b-c, Supplementary Figures 6-8)
-* 07.GUSscoreModel.R: 
+* 07.GUSscoreModel.R: </br>
 Cox regression analysis and constructs GUSscore model for predicting CRC survival outcomes using LASSO (Figure 3d-g, Supplementary Figures 9-10)
-* 08.speciesCorr.R: 
+* 08.speciesCorr.R: </br>
 Analyzes correlations between gmGUSs and bacterial species (Figure 4, Supplementary Figure 11)
-* 09.metaboliteAnalysis.R: 
+* 09.metaboliteAnalysis.R: </br>
 Analyzes correlations between gmGUSs and metabolites/KEGG Orthology terms (Figure 5)
-* 10.EXPandRNAseq.R: 
+* 10.EXPandRNAseq.R: </br>
 Analyzes experimental data including enzyme assays, cell experiments, and RNA-seq data (Figure 6, Supplementary Figures 12-14)
 
 ### Contents in 00.rawdata
@@ -47,33 +47,33 @@ This folder contains the raw files needed for analysis
 
 
 ## System Requirements
-The R scripts requires only a standard computer with enough RAM to support the in-memory operations.
-The scripts have been tested on macOS system, but Linux is theoretically feasible as well.
+The R scripts requires only a standard computer with enough RAM to support the in-memory operations.</br>
+The scripts have been tested on macOS system, but Linux is theoretically feasible as well.</br>
 * [R](https://cran.r-project.org) (version 4.3.2 or higher recommended)
-* Required R packages:
-    vegan, dplyr, ggplot2, ggpubr, viridis, reshape2, ape
-    VennDiagram, ggtree, treeio, pheatmap, psych, coin
-    caret, pROC, Boruta, randomForest
-    survival, survminer, glmnet, timeROC, readxl
-    clusterProfiler, org.Hs.eg.db, grid, ggsci, ggsignif
-    ggbreak, Rmisc, ggprism, EnhancedVolcano, tibble
+* Required R packages:</br>
+    vegan, dplyr, ggplot2, ggpubr, viridis, reshape2, ape</br>
+    VennDiagram, ggtree, treeio, pheatmap, psych, coin</br>
+    caret, pROC, Boruta, randomForest</br>
+    survival, survminer, glmnet, timeROC, readxl</br>
+    clusterProfiler, org.Hs.eg.db, grid, ggsci, ggsignif</br>
+    ggbreak, Rmisc, ggprism, EnhancedVolcano, tibble</br>
 * Please see each R script for its required R packages.
 
 ## Installation
-1. Install R from [the official website](https://www.r-project.org)
-2. Install required R packages using the following command in R:
+1. Install R from [the official website](https://www.r-project.org)</br>
+2. Install required R packages using the following command in R:</br>
 `install.packages(c("vegan", "dplyr", "ggplot2", "ggpubr", "viridis", "reshape2", 
                    "ape", "VennDiagram", "ggtree", "treeio", "pheatmap", "psych", 
                    "coin", "caret", "pROC", "Boruta", "randomForest", "survival", 
                    "survminer", "glmnet", "timeROC", "readxl", "clusterProfiler", 
                    "org.Hs.eg.db", "grid", "ggsci", "ggsignif", "ggbreak", "Rmisc", 
-                   "ggprism", "EnhancedVolcano", "tibble"))`
-if failed, try:
-`BiocManager::install('packageName')`
+                   "ggprism", "EnhancedVolcano", "tibble"))`</br>
+if failed, try:</br>
+`BiocManager::install('packageName')`</br>
 3. Download or clone this repository
 4. Ensure all raw data files are placed in the 00.rawdata/ directory as specified above
-5. Set your working directory to the repository location:
-`setwd("path/to/this/directory")`
+5. Set your working directory to the repository location:</br>
+`setwd("path/to/this/directory")`</br>
 6. run each script individually in R command line
 
 ## Random Forest Classifier Implementation
