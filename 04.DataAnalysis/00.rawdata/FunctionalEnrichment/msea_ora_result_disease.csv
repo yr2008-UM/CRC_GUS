@@ -1,0 +1,29 @@
+"","total","expected","hits","Raw p","Holm p","FDR"
+"Unclassified Ibd",83,2.11,14,1.78e-09,1.17e-07,1.17e-07
+"Crohn's disease",233,5.92,18,1.43e-06,9.28e-05,4.71e-05
+"Irritable bowel syndrome",81,2.06,10,1.41e-05,0.000904,0.000269
+"Ulcerative colitis",303,7.7,19,1.63e-05,0.00103,0.000269
+"Crohn's Disease",232,5.9,16,3.96e-05,0.00245,0.000522
+"Ulcerative Colitis",303,7.7,17,0.000309,0.0189,0.0034
+"Irritable Bowel Syndrome",81,2.06,8,0.000616,0.0369,0.0058
+"Rheumatoid arthritis",21,0.534,4,0.00152,0.0898,0.0126
+"Gout",14,0.356,3,0.00449,0.261,0.0301
+"Colorectal cancer",826,21,28,0.00456,0.261,0.0301
+"Ankylosing Spondylitis",21,0.534,3,0.0145,0.814,0.08
+"Rheumatoid Arthritis",21,0.534,3,0.0145,0.814,0.08
+"Myalgic Encephalomyelitis/chronic Fatigue Syndrome",22,0.559,3,0.0165,0.894,0.084
+"Cryptosporidium Infection",29,0.737,3,0.0348,1,0.164
+"Colorectal Cancer",825,21,26,0.0394,1,0.174
+"Gout",14,0.356,2,0.0471,1,0.194
+"Autism",102,2.59,5,0.11,1,0.428
+"Recurrent Clostridium Difficile infection",9,0.229,1,0.207,1,0.761
+"Ccd",17,0.432,1,0.356,1,1
+"Ileal Crohn's Disease",19,0.483,1,0.389,1,1
+"Asymptomatic Diverticulosis",22,0.559,1,0.435,1,1
+"Diverticular Disease",22,0.559,1,0.435,1,1
+"Symptomatic Uncomplicated Diverticular Disease",22,0.559,1,0.435,1,1
+"Enthesitis-related Arthritis",23,0.585,1,0.45,1,1
+"Diverticular disease",23,0.585,1,0.45,1,1
+"Autism",102,2.59,3,0.488,1,1
+"Immunoglobulin A Nephropathy (igan) Progressor",73,1.86,2,0.564,1,1
+"Clostridium Difficile Infection",132,3.36,1,0.972,1,1

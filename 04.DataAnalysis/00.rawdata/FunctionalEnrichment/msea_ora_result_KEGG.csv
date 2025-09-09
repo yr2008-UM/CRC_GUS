@@ -1,0 +1,35 @@
+"","total","expected","hits","Raw p","Holm p","FDR"
+"beta-Alanine metabolism",21,0.355,4,0.000316,0.0253,0.0253
+"Lysine degradation",30,0.507,4,0.0013,0.103,0.043
+"Phenylalanine, tyrosine and tryptophan biosynthesis",4,0.0676,2,0.00161,0.126,0.043
+"Arginine and proline metabolism",36,0.608,4,0.00261,0.201,0.0523
+"Valine, leucine and isoleucine degradation",39,0.659,4,0.00353,0.268,0.0564
+"Valine, leucine and isoleucine biosynthesis",8,0.135,2,0.00722,0.542,0.0825
+"Phenylalanine metabolism",8,0.135,2,0.00722,0.542,0.0825
+"Butanoate metabolism",15,0.253,2,0.0252,1,0.252
+"Histidine metabolism",16,0.27,2,0.0285,1,0.253
+"Pantothenate and CoA biosynthesis",20,0.338,2,0.0433,1,0.344
+"Propanoate metabolism",21,0.355,2,0.0473,1,0.344
+"Cysteine and methionine metabolism",33,0.558,2,0.105,1,0.683
+"Purine metabolism",70,1.18,3,0.111,1,0.683
+"Taurine and hypotaurine metabolism",8,0.135,1,0.128,1,0.713
+"Pyrimidine metabolism",39,0.659,2,0.139,1,0.713
+"Vitamin B6 metabolism",9,0.152,1,0.143,1,0.713
+"Biotin metabolism",10,0.169,1,0.157,1,0.739
+"Primary bile acid biosynthesis",46,0.777,2,0.181,1,0.804
+"Ubiquinone and other terpenoid-quinone biosynthesis",18,0.304,1,0.265,1,1
+"Terpenoid backbone biosynthesis",18,0.304,1,0.265,1,1
+"Citrate cycle (TCA cycle)",20,0.338,1,0.29,1,1
+"Pyruvate metabolism",23,0.389,1,0.326,1,1
+"Glycolysis / Gluconeogenesis",26,0.439,1,0.36,1,1
+"Alanine, aspartate and glutamate metabolism",28,0.473,1,0.382,1,1
+"Glutathione metabolism",28,0.473,1,0.382,1,1
+"Lipoic acid metabolism",28,0.473,1,0.382,1,1
+"Inositol phosphate metabolism",30,0.507,1,0.403,1,1
+"Glyoxylate and dicarboxylate metabolism",31,0.524,1,0.413,1,1
+"Glycerophospholipid metabolism",36,0.608,1,0.462,1,1
+"Fatty acid elongation",38,0.642,1,0.481,1,1
+"Fatty acid degradation",39,0.659,1,0.49,1,1
+"Tryptophan metabolism",41,0.693,1,0.507,1,1
+"Tyrosine metabolism",42,0.71,1,0.516,1,1
+"Fatty acid biosynthesis",47,0.794,1,0.557,1,1

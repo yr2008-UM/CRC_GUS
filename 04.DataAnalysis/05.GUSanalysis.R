@@ -1,43 +1,97 @@
-# ######################################################################
+# ####################################################################################
 #
-## GUS analysis for Figure 3AB
-## Author: 
-## Date: 01.01.2025
+## Analysis for GUSs, including differential analysis, validation on the
+## three independant cohorts, and analysis for confounding factors
+## Author: Junru Chen, junru.chen2019@hotmail.com
+## Version 1.0
+## Date: 09.09.2025
 #
-# ######################################################################
-library(dplyr)
-library(ggplot2)
-library(ggpubr)
+## Description:
+## This script performs differential abundance analysis of gut microbial 
+## β-glucuronidases (gmGUSs) across colorectal cancer (CRC) stages and 
+## generates visualizations for Fig. 3a, Fig. S5, and Fig. S7b. Key analyses
+## include:
+## 1. Differential abundance testing of gmGUSs between healthy controls and CRC stages
+## 2. Venn diagram of significant gmGUSs
+## 3. Phylogenetic tree visualization of gmGUSs
+## 4. Validation in independant cohorts (AUS, FRA, GER)
+## 5. Analysis of confounding factors
+#
+## Input Files:
+## 1. 00.rawdata/GUSabun_TPM.csv - TPM-normalized gmGUS abundance matrix
+## 2. 00.rawdata/group.csv - Sample metadata with CRC stages
+## 3. 00.rawdata/GUSsStat.csv - gmGUS metadata with loop annotations
+## 4. 00.rawdata/38gmGUS.tre - Phylogenetic tree of gmGUSs
+## 5. 00.rawdata/Cohorts/ - External cohort data for validation
+#
+## Outputs:
+## 1. Fig. 3a: Phylogenetic tree with abundance heatmap and prevalence plots
+## 2. Fig. S5: Venn diagram of significant gmGUSs
+## 3. Fig. S7b: Validation of the differential gmGUSs in AUS, FRA, and GER.
+#
+## Dependencies:
+## dplyr, ggplot2, ggpubr, VennDiagram, ggtree, treeio, pheatmap, psych, coin
+#
+## Usage:
+## 1. Set the working directory using setwd("the directory of scripts")
+## 2. Ensure all input files are in the specified paths
+## 3. Ensure all required packages were installed
+## 4. Run script in RStudio or R command line
+## 5. Output visualizations will be generated in R/RStudio
+#
+# Tested on: R 4.3.2 (macOS Ventura 13.5)
+#
+# #####################################################################################
 
-##### Get Data #####
-loop.colors <- c("No Loop"="#FABA39","Mini-Loop 1"="#1AE4B6","Loop 1"="#4686FB","Loop 2"="#7A0403", "Mini-Loop 2"=  "#E4460A", "Mini-Loop 1,2"="#A2FC3C","No coverage" ="#30123B")
-GUSabun_TPM <- read.csv("00.rawdata/GUSabun_TPM.csv",header = T,row.names = 1)
-group <- read.csv("00.rawdata/group.csv",header = T,row.names = 1)
-GUSsStat <- read.csv("00.rawdata/GUSsStat.csv",header = T,row.names = 1)
-analysis.list.info <- list(
-  compaired = list(
-    "Stage"=list(c("Healthy" ,"MP"),c("Healthy" ,"S0"),c("Healthy" ,"SI_II"),c("Healthy" ,"SIII_IV"))
-  ),
-  levels = list(
-    "Stage"=c("Healthy" ,"MP","S0","SI_II","SIII_IV")
-  ),
-  colors = list(
-    "Stage"=c("Healthy" ="#cecccb","MP"="#55B7E6","S0"="#193E8F","SI_II"="#F09739","SIII_IV"="#E53528")
-  )
-)
+# Install required packages if missing
+required_pkgs <- c("dplyr", "ggplot2", "ggpubr", "VennDiagram", "ggtree","treeio","pheatmap","psych","coin")
+install_missing <- required_pkgs[!required_pkgs %in% installed.packages()]
+if(length(install_missing)) install.packages(install_missing)
+# if failed, try BiocManager::install('package')
 
-##### diff of gmGUSs between groups #####
+# Load libraries
+library(dplyr)        # For data manipulation
+library(ggplot2)      # For visualization
+library(ggpubr)       # For visualization
+library(VennDiagram)  # For venn plot
+library(ggtree)       # For tree plot in Fig. 3a
+library(treeio)       # For tree plot in Fig. 3a
+library(pheatmap)     # For heatmap
+library(psych)        # For correlation analysis
+library(coin)         # For blocked wilcoxon rank sum test
+
+### SECTION 1: definition of functions ###
+
+## Function: group_mean
+## Purpose: Calculate group-wise statistics (median, mean, SD) for a data matrix
+## Inputs:
+##   - group.subgroup: Dataframe with group assignments
+##   - data: Data matrix (features x samples)
+##   - colInfo: Column name containing group information
+## Output: Dataframe with group statistics
 group_mean <- function(group.subgroup,data,colInfo="Group"){
+  # Get unique groups
   tmpg=unique(group.subgroup[,colInfo])
   tmpn=length(tmpg)
   rows=nrow(data)
+  
+  # Initialize result matrix
   result <- matrix(nrow=rows,ncol=tmpn*3)
   name <- NULL
+  
+  # Create column names
   for(i in tmpg){ name <- c(name,paste(i,'Median',sep='_'),paste(i,'Mean',sep='_'),paste(i,'SD',sep='_'))    }
   colnames(result)=name
+  
+  # Calculate statistics for each group
   for(i in tmpg){
+    # Subset samples for current group
     tmpdata=data[,rownames(group.subgroup[which(group.subgroup[,colInfo]==i),,drop=F])]
+
+    # colnames
     name <- c(paste(i,'Median',sep='_'),paste(i,'Mean',sep='_'),paste(i,'SD',sep='_'))
+    
+    # Calculate statistics for each feature
     for (j in 1:rows){
       tmp.median=median(as.numeric(tmpdata[j,]))
       tmp.mean=mean(as.numeric(tmpdata[j,]))
@@ -45,10 +99,19 @@ group_mean <- function(group.subgroup,data,colInfo="Group"){
       result[j,name] <- c(tmp.median,tmp.mean,tmp.SD)
     }
   }
+  
+  # Format and return results
   rownames(result) <- rownames(data)
   result <- data.frame(result)
   return(result)
 }
+
+## Function: wilcoxon.FDR.TAX
+## Purpose: Perform Wilcoxon tests and FDR correction to identify significant features
+## Inputs:
+##   - group: Dataframe with group assignments
+##   - data: Data matrix (features x samples)
+## Output: List with statistics
 wilcoxon.FDR.TAX <- function(data,group){
   
   data=data[,rownames(group)]
@@ -73,12 +136,14 @@ wilcoxon.FDR.TAX <- function(data,group){
     }
   }
   
-  
-  # sign species
+  # cutoff for sign species
   cutoff <- nrow(group)*0.1
   cutFC <- log2(2)
+
+  # Screen and format sign species
   signSpecies = list()
   
+  # formatted the sign species across CRC stages
   signTaxMP <- result %>% dplyr::mutate(log2FC=ifelse(MP_Mean > Healthy_Mean,log2(MP_Mean/Healthy_Mean),-log2(Healthy_Mean/MP_Mean))) %>% dplyr::mutate(log2FC=ifelse(!is.finite(log2FC),ifelse(MP_Mean>Healthy_Mean,10,-10),log2FC))
   signTax <- signTaxMP %>% dplyr::filter(`wilcox.test.p(Healthy VS MP)` < 0.05) 
   data <- species.abun[signTax %>% dplyr::arrange(-log2FC) %>% rownames(),]
@@ -115,26 +180,57 @@ wilcoxon.FDR.TAX <- function(data,group){
   signFeatureStageFC <- data.frame(Tax=allSign,MP=signTaxMP[allSign,'log2FC'],S0=signTaxS0[allSign,'log2FC'],S12=signTaxS12[allSign,'log2FC'],S34=signTaxS34[allSign,'log2FC']) %>% tibble::column_to_rownames('Tax')
   signFeatureStageMean <- result[allSign,c("Healthy_Mean","MP_Mean","S0_Mean",'SI_II_Mean',"SIII_IV_Mean")]
   
-  
-  
+  # the output of the function
   return(list(testResult=result,signFC=signFeatureStageFC,signMean=signFeatureStageMean,signSpecies=signSpecies))
 }
+
+### SECTION 2: data loading ###
+
+# Define color scheme for loop categories
+loop.colors <- c("No Loop"="#FABA39","Mini-Loop 1"="#1AE4B6","Loop 1"="#4686FB","Loop 2"="#7A0403", "Mini-Loop 2"=  "#E4460A", "Mini-Loop 1,2"="#A2FC3C","No coverage" ="#30123B")
+
+# Load metadata and abundance matrix
+GUSabun_TPM <- read.csv("00.rawdata/GUSabun_TPM.csv",header = T,row.names = 1)
+group <- read.csv("00.rawdata/group.csv",header = T,row.names = 1)
+GUSsStat <- read.csv("00.rawdata/GUSsStat.csv",header = T,row.names = 1)
+
+# Analysis configuration
+analysis.list.info <- list(
+  compaired = list(
+    "Stage"=list(c("Healthy" ,"MP"),c("Healthy" ,"S0"),c("Healthy" ,"SI_II"),c("Healthy" ,"SIII_IV"))
+  ),
+  levels = list(
+    "Stage"=c("Healthy" ,"MP","S0","SI_II","SIII_IV")
+  ),
+  colors = list(
+    "Stage"=c("Healthy" ="#cecccb","MP"="#55B7E6","S0"="#193E8F","SI_II"="#F09739","SIII_IV"="#E53528")
+  )
+)
+
+### SECTION 3: differential abundance analysis ###
+
+# Perform differential abundance analysis
 signGUSs <- wilcoxon.FDR.TAX(GUSabun_TPM,group)
 
-##### venn analysis #####
-library(VennDiagram)
+### SECTION 4: venn diagram of significant features (Fig. S5) ###
+
+# Generate venn diagram
 vennPlot <- venn.diagram(list(
   Healthy.VS.MP=c(signGUSs$signSpecies$Up$MP,signGUSs$signSpecies$Down$MP),
   Healthy.VS.S0=c(signGUSs$signSpecies$Up$S0,signGUSs$signSpecies$Down$S0),
   Healthy.VS.SI_II=c(signGUSs$signSpecies$Up$S12,signGUSs$signSpecies$Down$S12),
   Healthy.VS.SIII_IV=c(signGUSs$signSpecies$Up$S34,signGUSs$signSpecies$Down$S34)
-  ),
-  filename = NULL,
-  fill = c('blue','yellow', 'purple', 'green')
+),
+filename = NULL,
+fill = c('blue','yellow', 'purple', 'green')
 )
+
+# Display venn diagram
 grid.draw(vennPlot)
 
-##### figure 3B #####
+### SECTION 5: phylogenetic tree and heatmap visualization (Fig. 3a) ###
+
+# Define order of GUSs for tree visualization
 ggtreeOrderGUS <- c(
   "Bac_cellulosilyticus.GUS2",
   "Bac_cellulosilyticus.GUS18",
@@ -176,27 +272,24 @@ ggtreeOrderGUS <- c(
   "Stu_stutzeri.GUS"
 )
 
-# tree
-library(ggtree)
-library(treeio)
+# Load and plot phylogenetic tree
 beast_tree <- read.newick("00.rawdata/38gmGUS.tre")
 ggtree(beast_tree) + geom_tiplab(size=5)
 
-# loop type
+# Visualize loop types
 GUSsStat[ggtreeOrderGUS,] %>% dplyr::select(Loop) %>% tibble::rownames_to_column(var='GUSID') %>% dplyr::mutate(Lab=gsub("Loop ","L",gsub("Mini-Loop ","mL",gsub("No Loop","NL",Loop)))) %>% ggplot(aes(Loop,GUSID,fill=Loop,label=Lab)) + geom_tile()  + geom_text() + scale_fill_manual(values = loop.colors) + ylim(rev(ggtreeOrderGUS)) + theme_pubclean() + theme(legend.position = "null") + xlab("")
 
-# heatmap of mean abundance
-library(pheatmap)
+# Heatmap of mean abundance
 pheatmap((signGUSs$testResult %>% dplyr::select(Healthy_Mean,MP_Mean,S0_Mean,SI_II_Mean,SIII_IV_Mean))[ggtreeOrderGUS,],scale="row",cluster_cols = F,cluster_rows = F,color = colorRampPalette(colors = c("navy","white","firebrick3"))(100),cellheight = 12,cellwidth = 15,filename = NA)
 
-# up and down
+# Visualize up/down regulated features
 signFeatureStage <- rbind(
   signGUSs$signSpecies$Up %>% unlist() %>% as.data.frame() %>% dplyr::rename(Tax = 1) %>% tibble::rownames_to_column('Group') %>% dplyr::mutate(Group=gsub("S34.*","S34",Group),Type='Up') %>% dplyr::mutate(Group=gsub("S12.*","S12",Group)),
   signGUSs$signSpecies$Down %>% unlist() %>% as.data.frame() %>% dplyr::rename(Tax = 1) %>% tibble::rownames_to_column('Group') %>% dplyr::mutate(Group=gsub("S12.*","S12",Group),Type='Down')  %>% dplyr::mutate(Group=gsub("S34.*","S34",Group))
 ) %>% dplyr::mutate(Group=gsub("S0.*","S0",gsub("MP.*","MP",Group)))
 signFeatureStage %>% ggplot(aes(Group,Tax,shape=Type,fill=Type)) + geom_point(size=2) + scale_shape_manual(values = c("Down"=25,"Up"=24)) + scale_fill_manual(values = c("Down"="blue","Up"="red")) + xlab("") + ylab("") + ylim(rev(ggtreeOrderGUS)) + theme_classic() + theme(legend.position = "top",axis.text.x = element_text(angle = 45,hjust = 1))
 
-# prevalence
+# Calculate and visualize prevalence
 calculatePrevalence <- function(inputData,groupCol){
   group <- group %>% dplyr::filter(! is.na(get(groupCol)))
   mid <- inputData
@@ -217,16 +310,22 @@ preResult <- calculatePrevalence(GUSabun_TPM[ggtreeOrderGUS,],"Stage") %>% resha
 preResult$Var2 <- factor(preResult$Var2,levels = analysis.list.info$levels$Stage)
 preResult %>% ggplot(aes(value,Var1,color=Var2)) + geom_vline(xintercept = c(10),linetype=2,color="grey") + geom_line(group="Var2") + geom_point() + facet_wrap("Var2",nrow = 1,ncol = 5) + theme_classic() + xlab("Prevalence (100%)") + ylab("") + scale_color_manual(values = analysis.list.info$colors$Stage)  + theme(legend.position = "none") + ylim(rev(ggtreeOrderGUS))
 
-##### analysis for AUS, FRA, GER #####
+### SECTION 6: validation in three independant cohorts, Fig. 7b ###
+
+# Validate findings in AUS, FRA, and GER cohorts
 cohortResult <- list()
 for (midCountry in c('AUS','FRA','GER')) {
+  # Load data for selected cohort
   groupMuti <- read.csv("00.rawdata/Cohorts/Cohorts.group.csv",row.names = 1,header = T)  %>% dplyr::mutate(Stage = ifelse(Group == 'CTR','CTR',ifelse(Stage %in% c('S3','S4'),'S34',Stage))) %>% dplyr::filter(Country == midCountry) %>% dplyr::filter(Stage != 'NA') 
   speciesAbun <- read.table("00.rawdata/Cohorts/Cohorts.BGUS.abun.TPM.txt",sep = "\t",header = T,row.names = 1,quote = "",check.names = F)[ggtreeOrderGUS,rownames(groupMuti)]
+  
+  # Mean abundance across groups, and wilcoxon test
   sample1 <- groupMuti %>% dplyr::filter(Stage == "CTR") %>% rownames()
   meanH <- apply(speciesAbun,1,function(x){ if(sum(x) == 0){test <- 0;}else{test <-mean(as.numeric(x[sample1]));}}) %>% as.numeric
   midData <- NA
   for (midGroup in setdiff(unique(groupMuti$Stage),'CTR')) {
     sample2 <- groupMuti %>% dplyr::filter(Stage == midGroup) %>% rownames()
+    # wilcoxon test
     test <- apply(speciesAbun,1,function(x){ if(sum(x) == 0){p <- NA;}else{test <- wilcox.test(as.numeric(x[sample1]),as.numeric(x[sample2]),conf.int = T);p <- test$p.value;}}) %>% as.numeric
     meanC <- apply(speciesAbun,1,function(x){ if(sum(x) == 0){test <- 0;}else{test <-mean(as.numeric(x[sample2]));}}) %>% as.numeric
     middf <- data.frame(row.names=rownames(speciesAbun),Pvalue=test,meanC=meanC)
@@ -235,34 +334,44 @@ for (midCountry in c('AUS','FRA','GER')) {
   }
   midData <- midData %>% dplyr::select(-midData)
   midData$mean_HC <- meanH
+
+  # The results were stored in the List cohortResult
   cohortResult[[midCountry]] <- midData
 }
 
-expectedGUSs <- unique(c(signGUSs$signSpecies$Up$S12,signGUSs$signSpecies$Up$S34,signGUSs$signSpecies$Down$S12,signGUSs$signSpecies$Down$S34))
+# Heatmap of scaled mean abundances
 p1 <- rbind(
-  cohortResult$AUS[expectedGUSs,] %>% dplyr::mutate(Type=ifelse(Pvalue_S12 < 0.05 | Pvalue_S34  < 0.05,'sign','')) %>% dplyr::filter(Type == 'sign') %>% dplyr::mutate(S12=ifelse(Pvalue_S12 < 0.05,ifelse(mean_HC>mean_S12,'Down','Up'),''),S34=ifelse(Pvalue_S34 < 0.05,ifelse(mean_HC>mean_S34,'Down','Up'),'')) %>% dplyr::select(S12,S34) %>% tibble::rownames_to_column('gus') %>% reshape2::melt('gus') %>% dplyr::mutate(Country='AUS'),
-  cohortResult$FRA[expectedGUSs,] %>% dplyr::mutate(Type=ifelse(Pvalue_S12 < 0.05 | Pvalue_S34  < 0.05,'sign','')) %>% dplyr::filter(Type == 'sign') %>% dplyr::mutate(S12=ifelse(Pvalue_S12 < 0.05,ifelse(mean_HC>mean_S12,'Down','Up'),''),S34=ifelse(Pvalue_S34 < 0.05,ifelse(mean_HC>mean_S34,'Down','Up'),'')) %>% dplyr::select(S12,S34) %>% tibble::rownames_to_column('gus') %>% reshape2::melt('gus') %>% dplyr::mutate(Country='FRA'),
-  cohortResult$GER[expectedGUSs,] %>% dplyr::mutate(Type=ifelse(Pvalue_S12 < 0.05 | Pvalue_S34  < 0.05,'sign','')) %>% dplyr::filter(Type == 'sign') %>% dplyr::mutate(S12=ifelse(Pvalue_S12 < 0.05,ifelse(mean_HC>mean_S12,'Down','Up'),''),S34=ifelse(Pvalue_S34 < 0.05,ifelse(mean_HC>mean_S34,'Down','Up'),'')) %>% dplyr::select(S12,S34) %>% tibble::rownames_to_column('gus') %>% reshape2::melt('gus') %>% dplyr::mutate(Country='GER')
-) %>% ggplot(aes(variable,gus,fill=value,shape=value)) + facet_wrap('Country',nrow = 1,ncol = 3) + geom_point() + scale_shape_manual(values = c("Down"=25,"Up"=24)) + scale_fill_manual(values = c("Down"="blue","Up"="red")) + ylim(rev(ggtreeOrderGUS)) + xlab("") + ylab("") + theme_bw()
-
-p2 <- rbind(
   scale(cohortResult$AUS %>% dplyr::select(mean_HC,mean_S12,mean_S34) %>% t(),center = T,scale = T) %>% as.data.frame() %>% t() %>% as.data.frame() %>% tibble::rownames_to_column('gus') %>% reshape2::melt('gus') %>% dplyr::mutate(Country='AUS'),
   scale(cohortResult$FRA %>% dplyr::select(mean_HC,mean_S12,mean_S34) %>% t(),center = T,scale = T) %>% as.data.frame() %>% t() %>% as.data.frame() %>% tibble::rownames_to_column('gus') %>% reshape2::melt('gus') %>% dplyr::mutate(Country='FRA'),
   scale(cohortResult$GER %>% dplyr::select(mean_HC,mean_S12,mean_S34) %>% t(),center = T,scale = T) %>% as.data.frame() %>% t() %>% as.data.frame() %>% tibble::rownames_to_column('gus') %>% reshape2::melt('gus') %>% dplyr::mutate(Country='GER')
 ) %>% ggplot(aes(variable,gus,fill=value)) + facet_wrap('Country',nrow = 1,ncol = 3) + geom_tile() + scale_fill_gradient2(low = 'lightblue',mid = 'white',high='red') + ylim(rev(ggtreeOrderGUS)) + xlab("") + ylab("") + theme_bw()
 
+# Visualize validation results: up/down regulated features
+expectedGUSs <- unique(c(signGUSs$signSpecies$Up$S12,signGUSs$signSpecies$Up$S34,signGUSs$signSpecies$Down$S12,signGUSs$signSpecies$Down$S34))
+p2 <- rbind(
+  cohortResult$AUS[expectedGUSs,] %>% dplyr::mutate(Type=ifelse(Pvalue_S12 < 0.05 | Pvalue_S34  < 0.05,'sign','')) %>% dplyr::filter(Type == 'sign') %>% dplyr::mutate(S12=ifelse(Pvalue_S12 < 0.05,ifelse(mean_HC>mean_S12,'Down','Up'),''),S34=ifelse(Pvalue_S34 < 0.05,ifelse(mean_HC>mean_S34,'Down','Up'),'')) %>% dplyr::select(S12,S34) %>% tibble::rownames_to_column('gus') %>% reshape2::melt('gus') %>% dplyr::mutate(Country='AUS'),
+  cohortResult$FRA[expectedGUSs,] %>% dplyr::mutate(Type=ifelse(Pvalue_S12 < 0.05 | Pvalue_S34  < 0.05,'sign','')) %>% dplyr::filter(Type == 'sign') %>% dplyr::mutate(S12=ifelse(Pvalue_S12 < 0.05,ifelse(mean_HC>mean_S12,'Down','Up'),''),S34=ifelse(Pvalue_S34 < 0.05,ifelse(mean_HC>mean_S34,'Down','Up'),'')) %>% dplyr::select(S12,S34) %>% tibble::rownames_to_column('gus') %>% reshape2::melt('gus') %>% dplyr::mutate(Country='FRA'),
+  cohortResult$GER[expectedGUSs,] %>% dplyr::mutate(Type=ifelse(Pvalue_S12 < 0.05 | Pvalue_S34  < 0.05,'sign','')) %>% dplyr::filter(Type == 'sign') %>% dplyr::mutate(S12=ifelse(Pvalue_S12 < 0.05,ifelse(mean_HC>mean_S12,'Down','Up'),''),S34=ifelse(Pvalue_S34 < 0.05,ifelse(mean_HC>mean_S34,'Down','Up'),'')) %>% dplyr::select(S12,S34) %>% tibble::rownames_to_column('gus') %>% reshape2::melt('gus') %>% dplyr::mutate(Country='GER')
+) %>% ggplot(aes(variable,gus,fill=value,shape=value)) + facet_wrap('Country',nrow = 1,ncol = 3) + geom_point() + scale_shape_manual(values = c("Down"=25,"Up"=24)) + scale_fill_manual(values = c("Down"="blue","Up"="red")) + ylim(rev(ggtreeOrderGUS)) + xlab("") + ylab("") + theme_bw()
+
+# Combine plots
 ggarrange(p1,p2,nrow = 1,ncol = 2)
 
+# Prepare output table
 output <- cbind(
   cohortResult$AUS %>% dplyr::select(mean_HC,mean_S12,mean_S34,Pvalue_S12,Pvalue_S34),
   cohortResult$FRA %>% dplyr::select(mean_HC,mean_S12,mean_S34,Pvalue_S12,Pvalue_S34),
   cohortResult$GER %>% dplyr::select(mean_HC,mean_S12,mean_S34,Pvalue_S12,Pvalue_S34)
-  )
+)
 
-##### analysis for gender differences #####
+### SECTION 7: analysis for confounding factors ###
+
+# Gender differences in CRC patients
+# Load data
 speciesAbun <- GUSabun_TPM[ggtreeOrderGUS,rownames(group)]
 sample1 <- group %>% dplyr::filter(Stage %in% c('S0','SI_II','SIII_IV')) %>% dplyr::filter(Gender == "M") %>% rownames()
 sample2 <- group %>% dplyr::filter(Stage %in% c('S0','SI_II','SIII_IV')) %>% dplyr::filter(Gender == "F") %>% rownames()
+# Calculate mean abundances and p-values
 meanM <- apply(speciesAbun,1,function(x){ if(sum(x) == 0){test <- 0;}else{test <-mean(as.numeric(x[sample1]));}}) %>% as.numeric
 meanF <- apply(speciesAbun,1,function(x){ if(sum(x) == 0){test <- 0;}else{test <-mean(as.numeric(x[sample2]));}}) %>% as.numeric
 test <- apply(speciesAbun,1,function(x){ if(sum(x) == 0){p <- NA;}else{test <- wilcox.test(as.numeric(x[sample1]),as.numeric(x[sample2]),conf.int = T);p <- test$p.value;}}) %>% as.numeric
@@ -270,38 +379,39 @@ middf <- data.frame(gmGUS=rownames(speciesAbun),Pvalue=test,meanFemale=meanF,mea
 middf %>% dplyr::filter(Pvalue < 0.05)
 # for healthy group, no significant differences were observed.
 
-##### analysis for Age, BMI, Brinkman.Index, Alcohol differences #####
-library(psych)
+# analysis for Age, BMI, Brinkman.Index, Alcohol differences
+# Load data
 midGroup <- group[rownames(group %>% dplyr::filter(Stage %in% c('S0','SI_II','SIII_IV'))),c('Age','BMI',"Brinkman.Index", "Alcohol")]
 speciesAbun <- GUSabun_TPM[ggtreeOrderGUS,rownames(midGroup)] %>% t() %>% as.data.frame()
+# Correlation analysis
 corrRe <- corr.test(speciesAbun,midGroup,method="spearman")
 colnames(corrRe$p) <- paste0(colnames(corrRe$p),'P')
 outIN <- cbind(corrRe$r,corrRe$p) %>% as.data.frame() %>% dplyr::mutate(Age=paste0(sprintf("%.3f",Age)," (",sprintf("%.3f",AgeP),")"),BMI=paste0(sprintf("%.3f",BMI)," (",sprintf("%.3f",BMIP),")"),Brinkman.Index=paste0(sprintf("%.3f",Brinkman.Index)," (",sprintf("%.3f",Brinkman.IndexP),")"),Alcohol=paste0(sprintf("%.3f",Alcohol)," (",sprintf("%.3f",AlcoholP),")")) %>% dplyr::select(Age,BMI,Brinkman.Index,Alcohol)
 corrRe$p %>% as.data.frame() %>% tibble::rownames_to_column('ID') %>% reshape2::melt(by='ID') %>% dplyr::filter(value < 0.05) %>% dplyr::mutate(R=corrRe$r[ID,])
 # for healthy group, only signficant correlation between Lac_eligens.GUS2 and Age was observed, which was also detected in CRC patients.
 
-##### blocked wilcoxon rank sum test after factor analysis #####
-library(coin)
+# blocked wilcoxon rank sum test after factor analysis
+# Par_chongii.GUS1
 midGroup <- group %>% dplyr::filter(Stage %in% c('Healthy','MP'))
 speciesAbun <- GUSabun_TPM[ggtreeOrderGUS,rownames(midGroup)] %>% t()
 speciesAbun <- cbind(speciesAbun,midGroup)
 speciesAbun$Stage <- factor(as.vector(speciesAbun$Stage),levels = c('Healthy','MP'))
 speciesAbun$Gender <- factor(as.vector(speciesAbun$Gender),levels = c('F','M'))
 summary(aov(Par_chongii.GUS1~Stage + Gender, data=speciesAbun))
-
+# Lac_eligens.GUS2
 midGroup <- group %>% dplyr::filter(Stage %in% c('Healthy','SIII_IV'))
 speciesAbun <- GUSabun_TPM[ggtreeOrderGUS,rownames(midGroup)] %>% t()
 speciesAbun <- cbind(speciesAbun,midGroup)
 speciesAbun$Stage <- factor(as.vector(speciesAbun$Stage),levels = c('Healthy','SIII_IV'))
 summary(aov(Lac_eligens.GUS2 ~ Stage+Gender+Age, speciesAbun))
-
+# Stu_stutzeri.GUS
 midGroup <- group %>% dplyr::filter(Stage %in% c('Healthy','SI_II'))
 speciesAbun <- GUSabun_TPM[ggtreeOrderGUS,rownames(midGroup)] %>% t()
 speciesAbun <- cbind(speciesAbun,midGroup)
 speciesAbun$Stage <- factor(as.vector(speciesAbun$Stage),levels = c('Healthy','SI_II'))
 speciesAbun$Gender <- factor(as.vector(speciesAbun$Gender),levels = c('F','M'))
 summary(aov(Stu_stutzeri.GUS~Stage + Alcohol, data=speciesAbun))
-
+# Ech_strongylocentroti.GUS
 midGroup <- group %>% dplyr::filter(Stage %in% c('Healthy','S0'))
 speciesAbun <- GUSabun_TPM[ggtreeOrderGUS,rownames(midGroup)] %>% t()
 speciesAbun <- cbind(speciesAbun,midGroup)

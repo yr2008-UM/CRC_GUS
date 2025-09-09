@@ -1,10 +1,24 @@
 # Analysis for gut microbial β-glucuronidases in Colorectal Cancer
 Development of colorectal cancer (CRC) is accompanied by microbial and metabolic dysbiosis, with gut microbial β-glucuronidases (gmGUSs) potentially impacting carcinogenesis through de-glucuronidation of diverse important molecules. This study constructed an atlas of 550 gmGUSs from a public CRC cohort, employing 114 reference GUSs, three GUS domains, and seven conserved residues. Analysis along CRC stages revealed enrichment of Mini-Loop2 and GUS-harboring species Bacteroides cellulosilyticus and Bacteroides nordii, in late-stage. Moreover, 38 differential gmGUSs were identified totally, effectively classifying patients from controls (AUCs > 0.8). A GUSscore model based on five gmGUSs mainly from B. cellulosilyticus well predicted CRC outcomes (AUCs > 0.8). Notable gmGUS-associated genus-level shifts included reduced Lachnospira and Bifidobacterium, and increased Prevotella, Alistipes, and Fusobacterium. Particularly, several functional species were enriched in late-stage, including sulfate reducers, mucin and flavonoid degraders. Orthology-gmGUS-metabolite interactions revealed specific biological links in amino acid metabolism, vitamin biosynthesis, bacterial behavior, and LPS biosynthesis. These findings firstly define the disturbance of microbe-gmGUS-metabolite axis in colorectal tumorigenesis and its potential as early diagnostic biomarkers and therapeutic targets for CRC.
 
-## Contents in 00.rawdata
+## Repository Structure and Workflow
+This directory contains R scripts for reproducing all analyses and figures from the study. The scripts are organized in numerical order to facilitate sequential execution:
+* 01.rarefaction_barplot.R: Generates rarefaction curves for gmGUS diversity and bar plots for reference sequences and identified gmGUSs (Figure 1b, Supplementary Figures 1-2)
+* 02.LoopAnalysis.R: Analyzes loop category distribution, abundance differences, and taxonomic composition (Figure 2a-c, Supplementary Figure 3)
+* 03.DiversityAnalysis.R: Performs beta-diversity analysis (PCoA) and compares alpha diversity metrics across CRC stages (Figure 2d-e)
+* 04.speciesAnalysis.R: Analyzes species-level cumulative GUS abundance/number and copy number variation (CNV) (Figure 2f-h, Supplementary Figure 4)
+* 05.GUSanalysis.R: Performs differential abundance analysis of gmGUSs across CRC stages and validation in independent cohorts (Figure 3a, Supplementary Figures 5, 7b)
+* 06.RFmodel.R: Implements Random Forest classifiers for CRC/adenoma classification with feature selection and validation (Figure 3b-c, Supplementary Figures 6-8)
+* 07.GUSscoreModel.R: Cox regression analysis and constructs GUSscore model for predicting CRC survival outcomes using LASSO (Figure 3d-g, Supplementary Figures 9-10)
+* 08.speciesCorr.R: Analyzes correlations between gmGUSs and bacterial species (Figure 4, Supplementary Figure 11)
+* 09.metaboliteAnalysis.R: Analyzes correlations between gmGUSs and metabolites/KEGG Orthology terms (Figure 5)
+* 10.EXPandRNAseq.R: Analyzes experimental data including enzyme assays, cell experiments, and RNA-seq data (Figure 6, Supplementary Figures 12-14)
+
+### Contents in 00.rawdata
 This folder contains the raw files needed for analysis
 * [CNV](00.rawdata/CNV/): Output from MIDAS2, used for copy number variation analysis.
 * [Cohorts](00.rawdata/Cohorts/): The group information and GUS abundance profile of the AUS, FRA, GER cohorts.
+* [Cohorts](00.rawdata/FunctionalEnrichment/): The functional enrichment results for metabolites.
 * [KOinfo](00.rawdata/KOinfo/): The KEGG-Orthology (KO) information.
 * [Liter](00.rawdata/Liter/): Manual categorization of species, KOs, and metabolites.
 * [RNAseq](00.rawdata/RNAseq/): Resources from RNAseq data analyses.
@@ -25,10 +39,47 @@ This folder contains the raw files needed for analysis
 ## System Requirements
 The R scripts requires only a standard computer with enough RAM to support the in-memory operations.
 The scripts have been tested on macOS system, but Linux is theoretically feasible as well.
-* [R](00.rawdata/https://cran.r-project.org)
+* [R](00.rawdata/https://cran.r-project.org) (version 4.3.2 or higher recommended)
+* Required R packages:
+∙ vegan, dplyr, ggplot2, ggpubr, viridis, reshape2, ape
+∙ VennDiagram, ggtree, treeio, pheatmap, psych, coin
+∙ caret, pROC, Boruta, randomForest
+∙ survival, survminer, glmnet, timeROC, readxl
+∙ clusterProfiler, org.Hs.eg.db, grid, ggsci, ggsignif
+∙ ggbreak, Rmisc, ggprism, EnhancedVolcano, tibble
+* Please see each R script for its required R packages.
 
 ## Installation
-No additional installation is required. Simply download the scripts and resources for use.
+1. Install R from [官网](https://www.r-project.org)
+2. Install required R packages using the following command in R:
+`install.packages(c("vegan", "dplyr", "ggplot2", "ggpubr", "viridis", "reshape2", 
+                   "ape", "VennDiagram", "ggtree", "treeio", "pheatmap", "psych", 
+                   "coin", "caret", "pROC", "Boruta", "randomForest", "survival", 
+                   "survminer", "glmnet", "timeROC", "readxl", "clusterProfiler", 
+                   "org.Hs.eg.db", "grid", "ggsci", "ggsignif", "ggbreak", "Rmisc", 
+                   "ggprism", "EnhancedVolcano", "tibble"))`
+if failed, try:
+`BiocManager::install('packageName')`
+3. Download or clone this repository
+4. Ensure all raw data files are placed in the 00.rawdata/ directory as specified above
+5. Set your working directory to the repository location:
+`setwd("path/to/this/directory")`
+6. run each script individually in R command line
+
+## Random Forest Classifier Implementation
+The Random Forest classifier (script 06.RFmodel.R) includes:
+1. Feature selection using Boruta algorithm
+2. Model training with hyperparameter tuning
+3. Model evaluation using ROC analysis and variable importance
+4. External validation in three independent cohorts (AUS, FRA, GER)
+
+To adapt the classifier to new datasets:
+∙ Ensure your data follows the same format as GUSabun_TPM.csv(rows = features, columns = samples)
+∙ Provide sample metadata in the same format as group.csv
+∙ Modify the feature selection parameters if needed for your dataset
 
 ## Citation
 For usage of the tool, please cite the associated manuscript.
+
+## Support
+For questions regarding the code or reproducibility, please contact Junru Chen (junru.chen2019@hotmail.com).
